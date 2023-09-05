@@ -1,0 +1,1534 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+	<link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <title>Curva do Skid</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.min.css" />
+  <link rel="stylesheet" href="../media/fsae.css" />
+</head>
+<body>
+    <img id= "logo" src="../media/logo.png" alt="CAD do E1" class="logo" />
+          <header>
+    <h1 class="title">Curva do Skid</h1>
+              </header>
+      
+      <nav id="menu" >
+        <details open=""><summary>Menu</summary>
+          <ol>
+            <li>
+                <a href="../index.html"><strong>Página inicial</strong> e mapa do site</a></li>
+
+            <li>
+                <a href="../seguranca.html"><strong>Segurança</strong>: na oficina e na pista</a></li>
+
+            <li>Estratégia:
+                <ul>
+                <li><a href="#geral">Geral</a></li>
+                <li><a href="#manufatura">Manufatura</a></li>
+                </ul></li>
+
+            <li>
+                <a href="../historicos.html"><strong>Históricos</strong>: geral e EESC</a></li>
+
+            <li>
+                <a href="../outros.html"><strong>Outros</strong>: inclui mecânica estrutural</a></li>
+
+          </ol>
+        </details>
+      </nav>
+
+      <p style="text-align: justify; font-size: 12px;">
+      Esse site contém um compilado de conteúdos e reflexões elaborados durante um período de participação como membro de equipe de
+       Formula SAE 08-14. Decidi disponibilizar pois imagino que a distância da oficina e competições durante a pandemia gerou uma evasão
+        grande de conhecimento nas equipes, além da própria perda natural por rotatividade dos membros. A ideia é prover um material acelerador 
+        para as equipes e estimular a documentação/passagem de conhecimento. Também há arquivos históricos.
+      </p>
+      <p style="text-align: center; font-weight: bold; font-size: 12px;"><strong style="color: yellow;">Atenção!</strong> As ideias expostas refletem uma visão enviesada de uma
+         pessoa dentro de um contexto de equipe e tecnologias da época, portanto deve ser filtrado/criticado para determinar o que é util ao leitor.
+      </p>
+    <nav id="TOC">
+    <ul>
+    <li><a href="#organizando-uma-equipe-de-formula-sae">Organizando uma
+    equipe de Formula SAE</a>
+    <ul>
+    <li><a href="#prefácio">Prefácio</a></li>
+    <li><a href="#introdução">Introdução</a></li>
+    <li><a href="#propósito">Propósito</a></li>
+    <li><a href="#retratação">Retratação</a></li>
+    </ul></li>
+    <li><a href="#parte-1-tópicos-organizacionais">Parte 1: Tópicos
+    organizacionais</a>
+    <ul>
+    <li><a href="#por-onde-começar">Por onde começar?</a></li>
+    <li><a href="#patrocínio">Patrocínio</a></li>
+    <li><a href="#recrutamento-e-seleção">Recrutamento e
+    Seleção</a></li>
+    <li><a href="#aprendizado">Aprendizado</a></li>
+    <li><a href="#definição-de-metas">Definição de metas</a></li>
+    <li><a href="#necessidades-absolutas">Necessidades
+    absolutas</a></li>
+    <li><a href="#segurança">Segurança</a></li>
+    <li><a href="#trabalho-em-equipe">Trabalho em equipe</a></li>
+    <li><a href="#liderança">Liderança</a></li>
+    <li><a href="#lidar-com-a-burocracia-da-faculdade">Lidar com a
+    burocracia da faculdade</a></li>
+    </ul></li>
+    <li><a href="#parte-2-projeto-manufatura-e-preparação">Parte 2:
+    Projeto, Manufatura e Preparação</a>
+    <ul>
+    <li><a href="#o-que-é-um-carro-de-corrida">O que é um carro de
+    corrida?</a></li>
+    <li><a href="#equívocos-comuns">Equívocos comuns</a></li>
+    <li><a href="#lições-aprendidas-da-maneira-mais-difícil">Lições
+    aprendidas da maneira mais difícil</a></li>
+    <li><a href="#sugestões-para-começar-o-projeto">Sugestões para
+    começar o projeto</a></li>
+    <li><a href="#lições-aprendidas-nas-competições-de-fsae">Lições
+    aprendidas nas competições de FSAE</a></li>
+    </ul></li>
+    </ul>
+  </nav>
+    <h2 id="organizando-uma-equipe-de-formula-sae">Organizando uma
+    equipe de Formula SAE</h2>
+    <p><em>Por Alan Gruner</em><br />
+    <em>Traduzido para o português por Guilherme Z.P. com colaboração de
+    Rafael R.M.</em></p>
+    <h3 id="prefácio">Prefácio</h3>
+    <p>Quando alguns professores universitários se uniram há 20 anos
+    para iniciar uma competição pela SAE muito informal de projeto de
+    engenharia, então conhecido como Mini Indy, duvido que algum
+    deles esperava que seus esforços mudaria o mundo do automobilismo e
+    as vidas de milhares de jovens, homens e mulheres. Hoje este
+    programa, rebatizado Formula SAE ®, tornou-se o campeonato
+    mundial para estudantes de engenharia e o programa de treinamento
+    para engenheiros de corrida de carro e designers de todo o
+    mundo. Equipes de lugares tão distantes como a Coreia, Japão
+    e México viajam para os subúrbios de Detroit em Maio para o grande
+    evento. Competições satélites começaram no Reino Unido e
+    Austrália. Cada ano, cerca de 4.000 estudantes são membros de
+    equipes de Fórmula SAE de universidades ao redor do mundo. Quase
+    2.000 viajam para a competição em Detroit.</p>
+    <p>O impacto deste programa sobre esses alunos de engenharia é
+    significativa, chegando a mudar suas vidas. Devido à sua
+    experiência, muitos serão contratados em empregos na indústria
+    automobilística. Outros alcançarão o sonho de ir trabalhar para as
+    equipes de corrida na CART, Fórmula 1, IRL e outras modalidades de
+    corrida. Quase todos vão olhar para trás no Fórmula SAE como a
+    experiência mais desafiadora e recompensadora da sua época de
+    faculdade.</p>
+    <p>Quão forte o Fórmula SAE muda as pessoas envolvidas nele?
+    Pergunte a Alan Gruner, capitão da equipe do Estado de Michigan em
+    1995 e, agora, um analista de sistemas com uma empresa de
+    e-business na Califórnia. Alan foi tão afetado pela sua
+    experiência de Fórmula SAE que ele escreveu um “paper” sobre como
+    começar no Formula SAE. Em seguida, postou seu trabalho na web como
+    um recurso para todos os futuros engenheiros que aceitam o
+    desafio de se envolver com o projeto. Como resultado de sua
+    experiência de Fórmula SAE, ele também se tornou um ávido piloto de
+    rally.</p>
+    <p>Com a permissão de Alan, oferecemos as suas sugestões nesse
+    texto. Boa sorte!</p>
+    <p><em>Divisão de automobilismo da SAE International</em></p>
+    <p><a href="#logo">↥ <em>Retornar ao menu</em></a></p>
+    <h3 id="introdução">Introdução</h3>
+    <p>Parabéns! Se você está lendo isso, significa que você tem o
+    compromisso de estar envolvido de alguma forma com a competição de
+    Formula SAE. Este manual é feito para todos os alunos que participam
+    de alguma equipe de Formula SAE. É recomendado que você leia todo o
+    documento. Todos os tópicos abordados estão aqui por uma
+    razão. Quase tudo aqui foi aprendido da maneira mais difícil.</p>
+    <h3 id="propósito">Propósito</h3>
+    <p>Este manual está sendo escrito para ajudar as equipes de
+    Fórmula SAE se organizarem para completar com sucesso seus projetos
+    de carro. Ele foi originalmente escrito para ajudar a minha
+    ex-equipe de Fórmula a documentar problemas que foram encontrados e
+    as soluções que demos para eles. Uma grande quantidade
+    de conhecimento se vai com membros da equipe que se formam a cada
+    ano. Conhecimento sobre como fazer as coisas dentro da universidade,
+    o que são metas razoáveis ​​para uma equipe e onde encontrar os
+    recursos tinham que ser aprendidas a partir do zero pelos membros
+    novos. Esta segunda edição é feita para ajudar novas
+    equipes lançarem com sucesso um FSAE novo ou melhorar um já
+    existente. A minha esperança é que as equipes de FSAE irão
+    expandir e refinar essas ideias conforme elas vão amadurecendo. Meu
+    objetivo é fornecer orientações nas questões de processo de
+    gerenciamento de pessoas, dinheiro e outros recursos, com a
+    finalidade de competir na Fórmula SAE. Há um monte de livros
+    bons sobre os aspectos técnicos do projeto do veículo. Não é esse o
+    enfoque desse texto.</p>
+    <p>Este documento está dividido em duas seções. A primeira trata de
+    como conduzir a organização e inclui tópicos como: arrecadação de
+    dinheiro e recrutamento. A segunda seção se trata de algumas lições
+    de projeto aprendidas da maneira mais difícil, dicas de design e
+    construção e preparação para a competição em si. Ler as duas seções
+    é recomendado, já que muitas duvidas e problemas que aparecem
+    durante o projeto estão interligadas.</p>
+    <p><a href="#logo">↥ <em>Retornar ao menu</em></a></p>
+    <h3 id="retratação">Retratação</h3>
+    <p>As informações e opiniões apresentadas são retirados de textos de
+    gerenciamento de empresas e da minha própria experiência trabalhando
+    em 3 carros FSAE e gerenciando a construção de um durante minha
+    graduação na Universidade Estadual de Michigan. Ele também contém
+    histórias de outras equipes que foram compartilhadas comigo. Muito
+    disso é uma interpretação subjetiva de minha experiência no final de
+    um projeto de gestão de Formula. Eu sou humano e plenamente capaz de
+    esquecer alguma coisa. Espero que as pessoas irão discordar
+    de algumas das idéias apresentadas. As opiniões expressas são
+    minhas e não refletem os de qualquer organização que trabalho ou já
+    trabalhei ou que tenham sido parceiras da nossa equipe.</p>
+    <p><a href="#logo">↥ <em>Retornar ao menu</em></a></p>
+    <h2 id="parte-1-tópicos-organizacionais">Parte 1: Tópicos
+    organizacionais</h2>
+    <h3 id="por-onde-começar">Por onde começar?</h3>
+    <p>O pensamento natural de qualquer equipe de FSAE é começar se
+    focando no carro que será construído. Embora seja importante estar
+    pensando em questões e ideias de projeto, nas primeiras reuniões
+    vocês não criarão um plano definitivo. A menos que vocês tenham
+    projetado e construído automóveis anteriormente, vocês não devem
+    tomar decisões definitivas ainda. Haverá muito diálogo e ideias para
+    o projeto do carro sem ter nenhuma prioridade.</p>
+    <p>Os alunos costumam pensar que os maiores problemas que eles irão
+    encontrar serão os aspectos técnicos do carro. Entramos em um
+    projeto FSAE com grandes visões de um carro de corrida rápido e
+    excitante, mal podendo esperar para começar a projetá-lo e
+    construí-lo. O que você irá descobrir rapidamente, principalmente se
+    você estiver em um cargo de liderança, é que os maiores problemas a
+    serem superados não tem muito a ver com questões de projeto,
+    construção e pilotagem do carro. Os três maiores problemas que você
+    terá serão: PATROCÍNIO, DINHEIRO e BUROCRACIA DA FACULDADE. O quão
+    bem você lidar com eles vai determinar significativamente o quão bem
+    você poderá projetar e construir seu carro. Engenheiros geralmente
+    não gostam de perder tempo nesses tipos de atividade; porém, esse
+    dragão de três cabeças vai te perseguir durante toda a sua vida, em
+    cada emprego que você estiver. Para ser um bom engenheiro,
+    gerenciador, vendedor de marketing, ou o que quer que seja que você
+    esta pensando em ser, você terá que lidar efetivamente com essas
+    coisas. Uma das principais razoes pelas quais as empresas recrutam
+    fortemente pessoas que participaram de equipes de FSAE é que eles
+    tem experiência em administrar esses problemas.</p>
+    <p>A maior concentração inicial para uma equipe de FSAE é encontrar
+    PATROCÍNIO. As melhores ideias e projetos não serão nada se não
+    houver dinheiro que os tornem reais. O objetivo da competição FSAE é
+    construir um veiculo funcional. Dinheiro e doação de materiais é o
+    que faz que tudo isso acontecer. Ideias e estratégias para garantir
+    dinheiro, materiais e prestações de serviços serão discutidas em
+    detalhes na seção de patrocínio.</p>
+    <p>A segunda atividade que deve ser discutida e implementada é um
+    plano de recrutamento e seleção. No momento que um carro de FSAE é
+    construído, testado, preparado, validado, documentado, apresentado e
+    compete, muitos alunos colocaram seu tempo e disposição trabalhando
+    de graça para fazer tudo isso acontecer. Todo o trabalho que precisa
+    ser feito não irá acontecer se não existir pessoas para fazê-lo.</p>
+    <p>A ultima coisa crucial que deve ser discutida desde o começo é o
+    processo de aprendizagem. Construir um carro de competição significa
+    que você colocará em pratica assuntos como: dinâmica veicular,
+    transferência de calor, ciência e mecânica dos materiais, mecânica
+    dos fluidos, etc. muito além do que você irá precisar para passar
+    nessas matérias. Além disso, muitos de vocês irão desenvolver
+    habilidades gerenciais que excedem o que é ensinado em muitos cursos
+    de MBA. Você terá que ler e procurar especialistas continuamente
+    para chegar aonde você precisa.</p>
+    <p><a href="#logo">↥ <em>Retornar ao menu</em></a></p>
+    <h3 id="patrocínio">Patrocínio</h3>
+    <p>Construir um protótipo de FSAE é caro. Para construir um carro do
+    zero é necessário, pelo menos, 60 mil dólares, contando os valorem
+    em dinheiro, materiais e serviços. Essa grana não irá vir de
+    contribuições de associados nem do dinheiro de vendas de camisetas.
+    Uma procura por patrocínio deve começar o mais cedo possível,
+    preferencialmente no começo do ano.</p>
+    <p>O que geralmente acontece que é uma ou duas pessoas ficam
+    responsáveis pela tarefa de se aproximarem dos patrocinadores no
+    começo do ano letivo. Isso funciona, mas não é o jeito mais eficaz.
+    As pessoas podem rapidamente se atolar com compromissos.
+    Oportunidades importantes podem escapar pois apenas essas duas ou
+    três pessoas não terão tempo para administrar tudo isso e ainda
+    passar nas suas matérias na graduação.<br />
+    Um sistema para organizar e dividir o trabalho entre um grupo grande
+    é importante. Dividir o trabalho de busca de patrocínio entre os
+    membros dá a eles a verdadeira realidade de como é difícil conseguir
+    dinheiro para a equipe. É comum esse trabalho de arrecadar fundos e
+    patrocinadores não ser o mais estimulante na equipe.</p>
+    <p>Vou começar definindo a minha visão sobre patrocínio. Patrocínio
+    são doações em dinheiro, materiais, peças, serviços e experiência
+    técnica para a sua equipe. Para conduzir uma campanha de patrocínio
+    bem sucedida, você terá que se tornar um vendedor da sua equipe.
+    Alguns de vocês talvez não se empolguem sobre a ideia de se tornarem
+    vendedores; porém, nós estamos constantemente tentando persuadir as
+    pessoas com nossas ideias. Isso não é diferente. Você estará
+    tentando animar as pessoas sobre o projeto em que está trabalhando.
+    É divertido, uma vez que você faz isso por um tempo.</p>
+    <p>Os patrocinadores procuram algo em troca das suas doações.
+    Trate-os como valiosos consumidores em um negocio. Dê a eles o que
+    eles querem e eles irão voltar a patrociná-los no futuro. Eles ainda
+    colocarão vocês em um lugar mais importante para coisas que serão
+    mais importantes para você no futuro, como um emprego na empresa,
+    com altos salários e trabalhos interessantes.</p>
+    <p>Os patrocínios podem ser de varias formas. O tipo mais comum é
+    conseguir doações de peças e materiais. Para muitos fabricantes
+    desses itens, patrocinar projetos estudantis é um ótimo negocio. Um
+    numero de ex-membros de FSAE irão tomar decisões de compras de peças
+    dessas empresas quando eles estiverem empregados no mercado de
+    trabalho. Os patrocinadores querem criar uma boa imagem da empresa e
+    familiarizar vocês com a linha de produtos deles. A competição de
+    FSAE é patrocinada e organizada por um consorcio entre a Ford, GM e
+    Chrysler. Ela está cheia de designers, engenheiros, pesquisadores,
+    gerentes de compra e executivos dessas três empresas e seus
+    principais fornecedores. Companhias também tendem a ajudar, pois os
+    estudantes tem a reputação de serem criativos e utilizarem coisas
+    novas de forma inovadora (elas geralmente não funcionam, mas esse
+    não é o ponto). Isso ajuda no estimulo novas utilizações para
+    produtos já existentes. Geralmente essas doações não custam nada aos
+    patrocinadores. Quando comecei a trabalhar no meu primeiro Formula
+    em 1994, ele foi feito em fibra de carbono. Me contaram que iam
+    descartar a manta de fibra de carbono, já que ela não passaria nas
+    inspeções para uso militar em aviões. Ao invés de descartá-la, o
+    patrocinador deu a manta para a nossa equipe construir nosso carro.
+    Foi uma mão na roda para nós, e o patrocinador fez um outdoor
+    mostrando o produto dele no nosso carro. Um outro exemplo que ouvi
+    falar foi de uma equipe do noroeste dos EUA que constroem seu carro
+    com uma grande quantidade de alumínio aeronáutico, já que a Boeing
+    deixa os membros pegarem materiais de suas sucatas.</p>
+    <p>Um tipo mais difícil de patrocínio é procurar serviços de
+    usinagem, solda ou pintura. A maioria das empresas e profissionais
+    estão ocupados. O tempo gasto com vocês é tempo que não dá lucro a
+    eles. Porém, isso não significa que eles não ajudam. O FSAE é muito
+    da hora. Geralmente isso é suficiente pra encontrar pessoas que
+    ajudem. As motivações desses caras é a mesma dos fornecedores de
+    peça: eles criam uma imagem positiva da empresa deles entre
+    ambiciosos futuros engenheiros e administradores, familiarizando
+    vocês com seus produtos, e ficam expostos no carro para futuros
+    clientes.</p>
+    <p>Antes de abordar qualquer sobre conselhos e serviços, lembre-se
+    que o tempo dessas pessoas vale dinheiro. Você deve fazer sua lição
+    de casa para não perder tempo nem material. Seja claro sobre o que
+    você precisa. Normalmente ajuda técnica é dada e os serviços são
+    feitos em horas fora do horário comercial. Você deve estar preparado
+    para trabalhar em horários estranhos e contar com alguns
+    atrasos.</p>
+    <p>O tipo mais difícil de patrocínio a se conseguir é arrecadar
+    dinheiro. Trate esses patrocinadores como DEUSES. Ao contrario de
+    peças e materiais (que podem ser doados mesmo sem estoque), ajuda
+    técnica (o que é uma questão de alguém ter tempo para conversar com
+    você) e serviços ( que são executados fora do horário comercial),
+    dinheiro vem diretamente do bolso de alguém. Pequenas empresas
+    geralmente não conseguem contribuir, pela falta de alto capital.
+    Quando as organizações tem dinheiro, ele é cuidadosamente vigiado
+    por contadores. Alguém do alto escalão deve autorizar doações de
+    dinheiro.</p>
+    <p>Toda faculdade é sustentada pelos impostos do governo, dinheiro
+    de pesquisas, contribuições, etc. As mesmas pessoas que podem apoiar
+    vocês geralmente também apoiam as pesquisas feitas pelos seus
+    professores. Toda universidade tem profissionais responsáveis na
+    arrecadação de dinheiro. Peça ajuda a eles!</p>
+    <p>O financiamento é uma questão sensível em toda organização. É
+    importante ter um bom relacionamento com seus professores e
+    principalmente com os seus departamentos (Mecanica, Eletrica, etc.).
+    Essas pessoas são vitais para o projeto. Você não quer
+    envergonhá-los ou pisar no calo deles. Se eles não tiverem tempo
+    para ajudar diretamente, certamente eles podem indicar alguém que
+    pode ajudar vocês a criarem propostas de patrocínio e desenvolver
+    novas estratégias.</p>
+    <p>Ao pedir ajuda com sua campanha de arrecadação de fundos,
+    lembre-se de que ninguém irá fazer isso por você. O trabalho braçal
+    de identificar, entrar em contato e acompanhar o patrocinador em
+    potencial terá que ser feito pela equipe. Você está procurando
+    pessoas que podem te guiar e te economizar meses de tentativas e
+    erros.</p>
+    <p>Existem algumas coisas necessárias para você começar sua
+    campanha. Primeiro você precisa de um orçamento que reflita o custo
+    total do projeto. Lembre-se de incluir taxas de entrada, comida,
+    transporte e hospedagem no orçamento. A próxima coisa que você
+    precisa são fotos bacanas do carro para colocar na proposta de
+    patrocínio. Impressões são caras para esse fim. Copias coloridas
+    quebram o galho. As pessoas gostam de ver no que seu dinheiro está
+    sendo investido. Se você não construiu um carro ainda, faça o
+    desenho de um. Fotos da equipe com o carro também é uma boa,
+    lembrando que a equipe tem que ser mais de 10 pessoas. Uma vez que
+    os patrocinadores tenham prometido dinheiro, material ou serviços e
+    ele realmente foi cumprido, seu trabalho de arrecadação de fundos
+    está 60% feito. Você precisa ter um bom relacionamento com seus
+    patrocinadores para que eles continuem te apoiando. Você precisa do
+    entusiasmo deles para o seu projeto, futuras contribuições para a
+    equipe, e ainda oferecimento de empregos para os membros que irão se
+    formar. Isso exige um esforço continuo. Os próprios patrocinadores
+    dizem que uma das maiores frustrações que eles tem é que, depois que
+    a contribuição foi dada, eles nunca mais ouvem falar da equipe, até
+    o próximo ano, quando o pessoal volta apenas para pedir um novo
+    patrocínio. Envie newsletters para seus patrocinadores e apoiadores.
+    A newsletter tem que sair regularmente, no mínimo 4 vezes ao ano.
+    Ela deve ser curta. A maioria das pessoas para as quais você a está
+    enviando são muito compromissadas e tem muito trabalho para fazer. A
+    News deve ter novidades do projeto do carro, anuncio de novos
+    patrocinadores e acontecimentos importantes que acontecem na
+    universidade. O ponto principal é manter contato com eles durante
+    todo o ano e fazê-los continuarem envolvidos com o projeto. Vocês
+    devem também ter uma página na web para a equipe, com novidades e
+    atualizações frequentes, para manter as pessoas visitando-a
+    sempre.</p>
+    <p>Uma boa campanha de patrocínio não acontece de uma hora para a
+    outra. Ela exige tempo e prática. Geralmente quando um membro se
+    torna um bom arrecadador de fundos, ele(a) se forma e o conhecimento
+    se perde. A equipe pode se beneficiar tendo uma ou duas pessoas do
+    segundo ou primeiro ano envolvidas para levar o carregar o
+    conhecimento de como arrecadar fundos de maneira eficiente a diante.
+    É importantíssimo manter planilhas com informações organizadas e
+    detalhadas de quais companhas foram abordadas, com quem você
+    conversou em cada uma delas, e quais resultados foram obtidos. Não
+    faça futuros membros irem na mesma rua sem saída. Se alguma
+    organização ou pessoa não pode ou não irá contribuir, ANOTE. Faz com
+    que a faculdade e a equipe pareçam estúpidos se o mesmo pedido de
+    patrocínio é feito todo ano para a mesma empresa, não importa
+    quantas vezes as pessoas lá dizem não.</p>
+    <p><a href="#logo">↥ <em>Retornar ao menu</em></a></p>
+    <h3 id="recrutamento-e-seleção">Recrutamento e Seleção</h3>
+    <p>A arma mais poderosa que vocês possam ter para o recrutamento de
+    novos membros é um carro pronto. Muitas pessoas foram recrutadas por
+    um carro estacionado na frente do prédio de engenharia da faculdade
+    ou outro ponto bastante visitado pelos estudantes, com um anuncio
+    sobre a primeira reunião para novos membros. Este é um dos mais
+    simples e mais eficaz método. Você pode aumentar a eficiência desse
+    método espalhando cartazes pela faculdade com informações sobre o
+    carro e a equipe, junto com o contato de membros mais velhos.
+    Pessoas que tem vontade de participar não necessariamente devem ir
+    na primeira reunião. Não exclua essas pessoas.</p>
+    <p>Um carro no pátio exposto não deve ser a única forma de
+    recrutamento. Ele apenas chama a atenção das pessoas que vêm o
+    carro. É importante possuir pessoas de todos os anos de faculdade na
+    equipe. Como foi dito anteriormente, uma grande quantidade de
+    conhecimento se vai com membros que se formam. Para recrutar
+    calouros, a universidade geralmente ajuda. Existem programas nas
+    primeiras semanas de apresentação das varias atividades existentes
+    na escola. Basta vocês falarem com o professor responsável por cada
+    departamento e eles colocarão vocês para darem uma palestra aos
+    novos alunos.</p>
+    <p>A maioria das pessoas envolvidas no projeto serão alunos de
+    engenharia mecânica. Isso é apropriado, já que muitas das tarefas
+    caem em cima do contexto desse curso. Porem, é muito valioso possuir
+    uma variedade boa de engenheiros na equipe. No mínimo, vocês
+    precisam de um grupo de engenheiros eletricistas. O sistema elétrico
+    não costuma ser tao complicado para estes alunos, mas pode dar muita
+    dor de cabeça para engenheiros mecânicos. É geralmente comum
+    explorar sistemas de controle eletrônico, como shifters por exemplo.
+    Se existirem, alunos de outros cursos podem ser valiosos também,
+    como economistas e administradores. Vocês também devem estimular o
+    interesse por alunos de engenharia para essas áreas.</p>
+    <p>Vocês também devem procurar estudantes graduados. Eles tem acesso
+    a coisas que os não-graduados não tem, que são valiosas e necessitam
+    de alguns anos de experiência. Não há substituto para a experiência.
+    Se vocês conseguirem envolver algum aluno já graduado na equipe,
+    será um bom negocio para todos.</p>
+    <p>Uma vez que vocês conseguiram reunir um grupo de pessoas, vocês
+    devem mantê-las na equipe. Este é um dos mais difíceis trabalhos de
+    liderança. Não importa o que vocês façam, vocês terão muitas
+    reviravoltas. O projeto é cansativo. Muitas pessoas não conseguem
+    conciliar os trabalhos na equipe com a graduação e outras tarefas.
+    Algumas pessoas não gostam ou não querem trabalhar duro. Outras não
+    se sentem a vontade na equipe e caem fora. Um problema comum que
+    acontece é quando um grupo de membros experientes se fecha dentro de
+    uma “panela” e não abrem espaço para os mais novos se sentirem parte
+    da equipe. Isso é comumente visto nos primeiros trabalhos e em
+    testes. Os mais velhos vão fazer o trabalho sem avisar ninguém, e os
+    mais novos ficam apenas observando de longe. Outra coisa que
+    desestimula os membros novos é que o trabalho legal não dá para ser
+    feito pelos “bixos”. O trabalho que deve ser feito no começo do ano
+    é o trabalho duro de limpeza de peças e manutenção delas. Se vocês
+    conseguirem fazer com que os membros novos participem dessas
+    atividades, eles se sentirão mais a vontade na equipe. A parte em
+    que os membros novos ficam realmente animados é quando você começa a
+    desenhar e projetar as peças do carro.</p>
+    <p>Uma dica para manter as pessoas na equipe é dar-lhes uma
+    expectativa real do futuro. Eles devem saber que no começo eles
+    farão muito trabalho pesado, mas depois as coisas começam a ficar
+    mais legais. Eles devem saber que é esperado um alto nível de
+    comprometimento com a equipe. Mais de 10 horas semanais trabalhando
+    é normal. Eles também devem saber que um trabalho mal feito não será
+    aceito.</p>
+    <p>Outra dica para manter as pessoas unidas é se divertir. A menos
+    que vocês estejam começando do começo, uma das primeiras atividades
+    do ano deve ser pegar seu carro antigo e permitir todo mundo dar uma
+    volta nele. Uma vez que você sente o gosto de como é legal pilotar o
+    carro, é difícil cair fora da equipe. Quando as pessoas voltam da
+    primeira volta no carro, elas vem com folego novo para trabalhar com
+    muita vontade.</p>
+    <p>Não deixe seus carros antigos de lado. Vocês precisam deles para
+    recrutamento e como ferramenta de estimulo à equipe. Vocês também
+    precisam deles para testarem pilotos e novas ideias. Se vocês estão
+    começando do começo, tentem praticar no kart para obterem alguma
+    experiência de pilotagem. Tentem procurar também amadores que
+    pilotam para dirigirem seu carro. Lembre-se que o projeto de FSAE é
+    feito justamente para esse tipo de pessoa. Eles podem dar dicas
+    importantes para o carro de vocês.</p>
+    <p>A ultima dica para manter as pessoas na equipe é a sua relação
+    com o pessoal. Como esse é um projeto voluntario, todos os membros
+    tem o direito de expor suas opiniões, mesmo que a decisão final seja
+    fazer algo diferente. Nada afasta as pessoas mais rápido do que se
+    sentir ignorado. Vocês devem tomar o cuidado de não deixarem um
+    pequeno numero de pessoas tomarem conta das reuniões.</p>
+    <p>Os lideres da equipe: Gerente de Projetos, Engenheiro Chefe,
+    Gerente de Finanças, Diretor, ou qualquer titulo que sua equipe
+    utiliza, geralmente são escolhidos por eleições. Encontrar lideres
+    para cada subsistema é fundamental para o sucesso do projeto. Os
+    lideres devem trabalhar muito, tem ótimas habilidades de
+    relacionamento com os outros e ter conhecimento na área em que ele
+    trabalha. O responsável pelo chassis deve entender de estruturas. O
+    líder do powertrain deve entender motores, fluidos e transferência
+    de calor. Para encontrar esse tipo de conhecimento é necessário um
+    filtro. Possíveis métodos incluem escolher os mais importantes por
+    votação e depois nomear os responsáveis por cada subsistema, ou
+    criar requisitos para cada posição e deixar os membros votarem entre
+    os que se encaixam nas vagas. Independentemente da maneira que vocês
+    façam isso, essas pessoas devem trabalhar juntas umas as outras.
+    Conflitos de personalidade entre lideres da equipe denigram
+    extremamente todo o ambiente de trabalho e a equipe como um
+    todo.</p>
+    <p>Um dos tristes fatos da vida é que as pessoas são forçadas a sair
+    da equipe por varias razoes e não podem estar por perto em varias
+    ocasiões. É criticamente importante para cada posição chave na
+    equipe e em cada subsistema que exista alguém que esteja pronto para
+    substituir essa pessoa que se afastou. Isso é chamado de plano de
+    sucessão. Para cada pessoa chave, certifique-se que sempre existe
+    alguém trabalhando junto com ela e que também conheça a estratégia
+    da equipe, os planos gerais e o que deve ser feito até a
+    competição.</p>
+    <p><a href="#logo">↥ <em>Retornar ao menu</em></a></p>
+    <h3 id="aprendizado">Aprendizado</h3>
+    <p>Nas aulas nos são dados problemas bem definidos, com todos os
+    dados necessários para sua resolução, e respostas dentro de uma
+    margem de erro “aceitável”. Nesse projeto, vocês continuamente serão
+    apresentados a problemas que são ambíguos. Existirão várias
+    respostas que funcionarão e nenhuma resposta “certa”. Além disso,
+    vocês não terão toda a informação que precisam. Aí é quando vocês
+    começam a aprender as verdadeiras habilidades de engenheiros e
+    administradores. Se vocês não conhecem alguma coisa, vocês tem que
+    correr atrás para aprender. O mundo real é ambíguo; comece a se
+    acostumar com isso. Engenharia não é uma ciência. É a arte de
+    encontrar boas soluções da forma mais fácil e fazer escolhas certas.
+    A ciência apenas fornece as ferramentas que vocês irão utilizar.</p>
+    <p><a href="#logo">↥ <em>Retornar ao menu</em></a></p>
+    <h3 id="definição-de-metas">Definição de metas</h3>
+    <p>Definir metas é uma área onde muitas equipes se encontram em
+    apuros. Geralmente elas fazem planos mais ambiciosos do que os
+    recursos podem oferecer. E é fácil que isso aconteça. No momento em
+    que os alunos compreendem toda a complexidade do FSAE, eles se
+    formam. Uma das razoes desse manual é impressionar os mais novos
+    sobre a grandiosidade desse projeto. Os 3 grandes (Ford, GM e
+    Chrysler) e seus concorrentes (Toyota, Honda, Mitsubishi,
+    Volkswagen, Renaut, Fiat, Hyundai, Kia, etc.) levam pelo menos 22
+    meses para lançarem um carro novo ou reformulado no mercado. São 22
+    meses de trabalho intenso de uma grande equipe de engenheiros com
+    experiência e técnicos que têm trabalhado com carros há muito tempo.
+    Muitos deles são lideres mundiais nas suas profissões. As OEMs
+    também investem bilhões nesse processo.</p>
+    <p>Alguns de vocês devem estar pensando, com certeza, que vocês não
+    irão produzir algo tão complexo como uma linha de produção de
+    carros. Embora um FSAE é mais simples no numero de peças, o processo
+    de criação é o mesmo. A maior diferença é que o projeto é inclinado
+    para otimizar a dinâmica veicular do carro de competição.</p>
+    <p>Dependendo de quanto organizados vocês forem, vocês terão de 9 a
+    18 meses e alguns mil dólares para construir um carro novo. Além
+    disso, você estará fazendo o projeto com estudantes que dividem seus
+    tempos com a graduação e vão aprendendo os processos conforme o
+    tempo passa e muitos têm a prioridade de passar nas matérias.</p>
+    <p>A maioria das equipes profissionais de corrida compram seus
+    chassis, motores e outros componentes do carro de fabricantes
+    profissionais que atuam a um longo tempo no mercado. Eles gastam
+    milhares de horas e uma enorme quantia de dinheiro em testes e
+    melhorias nessas peças compradas para torná-las mais competitivas.
+    As pessoas que trabalham nisso também já fazem isso a anos. Isso não
+    é para desencorajar vocês, mas apenas para mostrar o quanto é
+    investido e gasto em projetos de carros de corrida, construção e
+    aprimoramento. A boa noticia é que vocês estarão competindo contra
+    outras equipes que não são profissionais no ramo. O dinheiro,
+    talento e recursos que vocês tem são parecidos com os quais todas as
+    outras equipes também possuem. Eles também terão que fazer alguns
+    milagres para chegar na competição, assim como vocês. O desafio que
+    vocês encaram é de fazer o melhor trabalho possível com os recursos
+    que vocês possuem.</p>
+    <p>O primeiro passo é estabelecer metas e escrevê-las. É fácil ter
+    pessoas na equipe com diferentes ideias sobre as metas, e isso pode
+    (e irá) gerar conflitos entre os membros. Fazer uma lista de metas
+    com as quais todo mundo concorde ajuda a minimizar esse problema.
+    Ela também ajuda a manter a equipe focada. É muito fácil perder o
+    rumo quando se entra em detalhes específicos do projeto. Reler as
+    metas escritas ajuda a ter uma visão geral do projeto e retomar no
+    caminho certo.</p>
+    <p>O FSAE atrai pessoas com diferentes metas e motivações. Alguns
+    estudantes irão quer construir o carro melhor tecnicamente projetado
+    (a.k.a. o mais “engenheirado”), onde custos, tempo e outras
+    considerações serão deixados de lado. Eles vão querer um monocoque
+    de fibra de carbono, motor aspirado com turbo, sistemas de controle
+    eletrônicos complexos, e um design aerodinamicamente perfeito,
+    basicamente o que é feito em equipes de Formula 1 e Formula Indy.
+    Esse carro será construído por estudantes inexperientes em nove
+    meses com alguns mil dólares. Outros estudantes querem por a mão na
+    massa e aprender com a prática. Eles se sentem satisfeitos em
+    superar o desafio de algo que demanda muitos conceitos técnicos como
+    o FSAE. Dentro do ultimo grupo, que geralmente é o maior de todos,
+    estão aqueles que querem vencer.</p>
+    <p>Cada uma dessas metas é aceitável e pode levar a uma experiência
+    satisfatória. Porem, vocês devem decidir como um grupo qual as metas
+    que vocês querem atingir. Construir um carro que fique entre os top
+    10 exige uma disposição de tempo, dinheiro e outros recursos bem
+    diferentes do que a equipe que tem a primeira matriz de logica fuzzy
+    com controle computacional de auto-lubrificação do rolamento do
+    mancal dos mufflers.</p>
+    <p><a href="#logo">↥ <em>Retornar ao menu</em></a></p>
+    <h3 id="necessidades-absolutas">Necessidades absolutas</h3>
+    <p>Para conduzir uma equipe de FSAE, existem muitas coisas que seria
+    interessante vocês possuírem. Seria ótimo ter acesso a toda
+    tecnologia da Chrysler e aos campos de prova da GM. Coisas como um
+    grande escritório, computadores novos todo ano com todos os
+    softwares que podem ser utilizados para o projeto de peças, um staff
+    de fabricantes a sua disposição, prontos para manufaturarem suas
+    peças no momento em que vocês terminarem seus desenhos, e um caixa
+    com um milhão de dólares. Vocês não terão isso. Vocês terão alguns
+    mil dólares, sua própria ingenuidade, e um grupo de estudantes tão
+    doidos quanto você. Vocês terão que fazer milagres sempre que
+    precisar para finalizar esse projeto. Existem seis necessidades
+    mínimas que vocês precisam para terminar o carro. Pela ordem de
+    importância, são elas:</p>
+    <ul>
+    <li>Dedicação e Fé;</li>
+    <li>Pessoas;</li>
+    <li>Dinheiro;</li>
+    <li>Local de Trabalho;</li>
+    <li>Bom relacionamento com seus professores e sua Faculdade;</li>
+    <li>Lojas de peças e Facilidades para Soldagem;</li>
+    </ul>
+    <p>Tentar conduzir o projeto sem essas coisas é impossível.</p>
+    <p>Esse projeto vai ser foda. Vocês não podem desistir quando a
+    coisa ficar feia. Vocês tem que estar completamente dedicados ao
+    projeto, faça chuva, faça sol, que venha o inferno, uma inundação,
+    problemas burocráticos, patrocinadores que não ajudam, eixos
+    quebrados, e motores fundidos, vocês vão terminar o carro e competir
+    no final do ano. Vocês vão resolver, não importa o quanto a coisa
+    pareça impossível, vocês VÃO chegar lá! Quando vocês fazem coisas
+    ambiciosas desse tipo, as coisas acontecem. Assumindo que todos
+    vocês estão familiarizados com a Lei de Murphy, vocês devem saber
+    que Murphy irá bater na porta de vocês várias vezes, e em muitas
+    delas, na pior hora possível. Alguém que está construindo uma peça
+    critica do carro sai da equipe e desaparece, deixando as coisas pela
+    metade. Uma peça fundamental que o patrocinador prometeu doar a
+    vocês não vai chegar, porque eles resolveram cortar o patrocínio.
+    Isso é a vida normal de uma equipe de FSAE. Vocês devem ser fortes o
+    suficiente para superar todas essas adversidades.</p>
+    <p>A próxima coisa que vocês precisam é de pessoas. É necessário um
+    certo número de pessoas para fazer um projeto dessa complexidade
+    acontecer. Depois de conversar com várias equipes de FSAE, parece
+    ser um consenso de que é necessário um grupo de 8 a 20 pessoas
+    totalmente dedicadas ao projeto. Isso pode ser crítico. Vocês podem
+    ter um grupo grande se dedicando apenas a uma parte do carro,
+    enquanto outras partes contam com uma ou duas pessoas. Do outro
+    lado, possuir uma equipe muito grande pode gerar uma perda da
+    coordenação da equipe. Não existem grandes equipes no FSAE.</p>
+    <p>Quando você encoraja as pessoas a construírem um carro, não
+    importa o que aconteça, você irá precisar de dinheiro. Arrecadar
+    fundos já foi abordada na seção de patrocínios. Não comece a gastar
+    dinheiro até que você tenha um plano geral em que todo mundo foi
+    incluído.</p>
+    <p>Com dedicação, pessoas e dinheiro na equipe, vocês precisaram de
+    um local de trabalho. A minha impressão é que a maioria das equipes
+    de FSAE trabalha no canto de laboratórios de professores legais.
+    Espaço é uma questão altamente politizada na maioria dos campus.
+    Faça o que for necessário para manter um bom relacionamento com as
+    pessoas que dividem o espaço com vocês. Se vocês forem chutados, vai
+    demorar um longo tempo para encontrar outro lugar, tempo que vocês
+    teriam que estar trabalhando no carro.</p>
+    <p>Bons conselhos de professores e técnicos valem ouro. Vocês estão
+    trabalhando em um projeto difícil e complexo tecnicamente. Isso
+    demanda do grupo que vocês encontrem caminhos através de questões
+    econômicas, politicas e organizacionais que são igualmente
+    complexas. Vocês precisarão de defensores na faculdade. Vocês
+    precisam de conselhos de pessoas que já estão na faculdade por um
+    bom tempo, e sabe como as coisas podem ser obtidas. Professores e
+    técnicos que estão dispostos a perder seu tempo para ajudarem vocês
+    no que for preciso são pessoas especiais. Valorizem eles.</p>
+    <p>Por fim, vocês com certeza não irão construir nenhum carro de
+    corrida sem lojas de peças e acesso à solda. Muitas faculdades
+    continuam tentando, mas não fica bom. Se vocês tem dinheiro
+    suficiente, vocês podem contratar alguém pra fazer. Reserve pelo
+    menos 15 mil dólares para ter todo o trabalho feito
+    profissionalmente.</p>
+    <p><a href="#logo">↥ <em>Retornar ao menu</em></a></p>
+    <h3 id="segurança">Segurança</h3>
+    <p>Segurança é uma das questões mais complicadas que envolvem uma
+    equipe de FSAE. Vocês estão construindo um carro de corrida. Carros
+    de corrida tem uma reputação merecida de serem perigosos. Para
+    construir o carro, vocês utilizarão soldas, serras,
+    máquinas-ferramentas e produtos químicos de todos os tipos. Como o
+    carro, essas coisas serão seguras se utilizadas de maneira correta,
+    e vice-versa. Em um mundo onde processos jurídicos e multas são
+    aplicadas facilmente para pessoas que fazem coisas estúpidas, existe
+    sempre um nervosismo justificável quando o assunto é deixar
+    estudantes em contato com alguma coisa que pode machucá-los. Tudo o
+    que é necessário é um acidente sério para fecharem sua equipe para
+    sempre. Existem muitas pessoas com poder que não compreendem o
+    porque vocês querem participar em um projeto desses e não apenas
+    irem as aulas e se formarem. Também existem pessoas que adorariam
+    acabar com os projetos estudantis pois eles pensam que essas coisas
+    trazem uma dor de cabeça a mais, e eles não precisam de mais
+    preocupações do que já possuem. Não dê a essas pessoas nenhum motivo
+    para que eles acabem com a equipe. Projetos de FSAE já foram
+    fechados, ou quase fechados, muitas vezes quando pessoas fizeram
+    algo perigoso, ou que parecia perigoso, ou que foi estúpido. Já ouvi
+    exemplos de equipes que colocaram o carro para andar nas ruas da
+    cidade ou equipes que correram a noite com uma lanterna presa com
+    silver tape no chassis. A tentação de fazer coisas assim é muito
+    grande. NÃO FAÇA! Vocês estão trabalhando com uma coisa que não é à
+    prova de idiotas. Não sejam idiotas.</p>
+    <p>É inevitável que sua equipe irá atrair alguém que é maluco. É por
+    isso que as regras de segurança foram criadas. Infelizmente, vocês
+    não ligam muito para elas, até que algo sério acontece com alguém da
+    equipe. É quase impossível um grupo se auto-policiar. Trabalhe
+    pedindo dicas para professores para desenvolver procedimentos que
+    diminuam as chances das pessoas se machucarem.</p>
+    <p><a href="#logo">↥ <em>Retornar ao menu</em></a></p>
+    <h3 id="trabalho-em-equipe">Trabalho em equipe</h3>
+    <p>O sucesso no projeto de FSAE irá depender da eficiência em lidar
+    com um dos sistemas mais complexos de adaptação que vocês irão
+    encontrar na vida: um grupo de pessoas. Muitos engenheiros imaginam
+    que indivíduos irão simplesmente se reunir e começar a trabalhar.
+    Não é tão simples assim. Para levar um projeto com a magnitude do
+    FSAE é necessário o trabalho em equipe. Equipes boas podem construir
+    sociedades, pirâmides e até mesmo carros de corrida rápidos. Equipes
+    ineficientes apenas desperdiçam recursos e estragam o potencial dos
+    seus membros.</p>
+    <p>Engenheiros têm a reputação de não possuírem habilidades de
+    relacionamento com pessoas e serem difíceis para se trabalhar em
+    grupo. Há um pouco de verdade nesse estereótipo. Felizmente, vocês
+    não precisam ser “pessoas do povo” para trabalharem bem com seus
+    colegas. Porém, compreender o básico das dinâmicas de grupo pode
+    ajudar vocês a diagnosticarem problemas e enxergarem onde o seu
+    próprio comportamento está ajudando ou prejudicando a evolução da
+    equipe.</p>
+    <p>Psicólogos comportamentais descobriram que quando os grupos se
+    formam em torno do trabalho, eles passam por quatro estágios. Eles
+    chamam de: formação; normalização; discussões; e produção. O
+    primeiro estágio é onde as pessoas se reúnem e começam a se
+    conhecer. Geralmente existe um grande número de conversas sobre
+    assuntos não relacionados ao trabalho. As pessoas começam a aprender
+    o nome das outras e seus gostos. A fase de normalização é quando
+    muitas das regras formais e informais do grupo são estabelecidas. O
+    nível de formalidade entre os membros, assuntos que são aceitáveis
+    de serem discutidos, como ideias diferentes são recebidas e
+    avaliadas e como diferentes grupos étnicos são tratados são as
+    coisas que entram na pauta, pelo menos em um nível informal, nesse
+    estágio. O estágio de discussões é onde as pessoas discutem ideias e
+    visões do que o grupo deve fazer para alcançar seus objetivos. Este
+    também é o estágio onde o trabalho do grupo começa. O ultimo estágio
+    é onde a maioria do trabalho é feito.</p>
+    <p>Equipes são entidades frágeis. Muitas coisas podem ser feitas
+    erradas e geralmente isso acontece. Cada estágio exige um alto nível
+    de confiança e comprometimento entre os membros. Uma equipe em
+    potencial pode enroscar em qualquer uma dos três primeiros estágios
+    e nunca se tornar produtiva. Quando pessoas entram ou deixam a
+    equipe, todo o processo começa novamente. Esta é uma das razões do
+    porque é tão difícil se adaptar a uma equipe ou convidar alguém
+    novo. Novos relacionamentos devem ser estabelecidos e novas regras
+    criadas. Vocês não querem ser incomodados por essa coisa melosa e
+    sentimental, mas essa é a diferença entre uma ótima equipe e uma boa
+    equipe. Ao invés de entrar em um monte de clichês como “não existe
+    um EU na equipe”, apenas lembre-se que o sucesso depende do quão bem
+    vocês trabalham juntos. Ninguém consegue montar um carro
+    sozinho.</p>
+    <p>Existem coisas que podem ajudar a melhorar o seu trabalho em
+    equipe. Comece deixando outras pessoas falarem e ouça o que elas têm
+    a dizer. Ouvir é um processo de atividade mental onde você tenta
+    compreender o significado do que estão dizendo. Isso não é o mesmo
+    que escutar, que é um reconhecimento fisiológico do som que está
+    saindo da boca de alguém. Discuta questões do projeto em aspectos
+    quantificáveis do problema. Foque-se nos problemas e não personalize
+    desentendimentos. Não descarte uma ideia porque você não gosta da
+    pessoa que a deu. Isto é o mais importante: entregue sua parte do
+    projeto nos prazos e dentro do orçamento previsto. Por fim, você
+    deve ser durão. Nem todos vão gostar das suas ideias, e a maioria
+    das pessoas não se importa de dizer isso na sua cara. Se você não
+    aguentar as críticas ou ficar irritado se a equipe não fizer do seu
+    jeito, encontre outra profissão.</p>
+    <p><a href="#logo">↥ <em>Retornar ao menu</em></a></p>
+    <h3 id="liderança">Liderança</h3>
+    <p>Não existe um jeito certo de liderar as pessoas. Já fizeram
+    vários estudos sobre o que forma bons líderes. Não há uma lista com
+    características que forme um bom líder. Atitudes de um líder
+    dependem da situação. O que funciona em alguns momentos pode não ser
+    bom em outros. Como você interage da melhor forma com seus
+    companheiros depende de como você encara o trabalho em equipe. No
+    começo, novos membros precisam de encaminhamento para o trabalho.
+    Eles não sabem onde encontrar as ferramentas. Eles não sabem as
+    dicas para montar ou desmontar alguma coisa que você tenha aprendido
+    ano passado. Alguns deles talvez nunca tenham trabalhado em um
+    carro. Novos membros, na maioria das vezes, vão precisar de ajuda
+    até que eles se sintam confiantes no que estão fazendo. Os líderes
+    devem preparar várias atividades no começo do ano, para que nenhum
+    membro novo se sinta a toa. Uma maneira rápida de perder novos
+    membros é desperdiçar seus tempos.</p>
+    <p>Rapidamente, os líderes serão capazes de voltar atrás e delegar
+    tarefas diretamente aos novos membros. Se você delegar coisas rápido
+    demais, as pessoas ficaram bravas com você, pois elas não estarão
+    preparadas. Se você continuar supervisionando o trabalho delas de
+    perto por seis meses, elas também ficaram bravas, pois não precisam
+    mais de toda essa atenção. É um equilíbrio que você deve manter. Já
+    ouvi lideres de equipes reclamando muito de pessoas que não tem
+    iniciativa própria para fazer as coisas. Eles encaram isso como um
+    tipo de fraqueza. Se você se sente dessa forma, seja paciente. Os
+    membros novos ganharão confiança se você deliberar tarefas para
+    eles. Por outro lado, se eles sentirem que você desdenha deles, eles
+    irão embora, um por um, e sobrarão apenas 5 pessoas para construir o
+    carro.</p>
+    <p>Aqui estão algumas coisas que se esperam de um líder. Primeiro,
+    uma minoria das pessoas do grupo causaram a maioria dos problemas.
+    Isso trata-se de “demarcar o território”. Vocês terão pelo menos uma
+    pessoa que precisará de mais atenção. Outro problema comum acontece
+    quando uma parte da equipe não vê a outra trabalhando. Subgrupos
+    pequenos e fragmentados são notórios por assumir que os outros
+    membros da equipe não estão trabalhando. Com uma certa frequência,
+    talvez semanalmente, cada subgrupo deve mostrar para todos o que fez
+    durante a semana. Eles devem explicar o trabalho feito, quais os
+    obstáculos que apareceram, como eles pensam em resolver esse
+    obstáculo e suas expectativas até a próxima semana. Esta abordagem
+    pode causar vários benefícios. Mostra que existe um progresso no
+    trabalho, alguns problemas que acabam aparecendo e dá aos membros da
+    equipe metas para o futuro. Também põe o “poder da pressão” sobre os
+    outros membros. Existem poucas coisas tão inconfortáveis como ver
+    que os outros estão gastando seus tempos trabalhando no carro,
+    enquanto você fica jogando videogame e enchendo a cara.</p>
+    <p><a href="#logo">↥ <em>Retornar ao menu</em></a></p>
+    <h3 id="lidar-com-a-burocracia-da-faculdade">Lidar com a burocracia
+    da faculdade</h3>
+    <p>A burocracia em cada faculdade pode ser um dos seus maiores
+    problemas. O sistema de compra e rastreamento de peças e matérias
+    que a universidade criou para as compras realizadas por elas existem
+    com diversos objetivos, porém a velocidade e a capacidade de
+    respostas, necessárias para o projeto FSAE, não está entre elas. A
+    parte burocrática é diferente para cada lugar, porém existem algumas
+    dicas para que você lide com as da sua faculdade. Primeiro: como
+    estudante, você estará na faculdade por apenas alguns anos. As
+    pessoas que trabalham lá ficaram por muito mais tempo que você. Você
+    vai embora depois de se formar. A tendência natural em qualquer
+    processo burocrático é dar prioridades para quem possa tornar sua
+    vida mais infeliz. Regras e procedimentos demorados serão seguidos,
+    a não ser que alguém do alto escalão diga o contrário. Por isso,
+    mantenha um bom relacionamento com os professores e funcionários.
+    Segundo: credibilidade é algo que demora para ser construído. A sua
+    credibilidade é algo frágil. NUNCA se envolva com comportamentos
+    antiéticos. Não falsifique documentos. Não utilize dinheiro senão
+    para o seu devido fim. Não aceite dinheiro por debaixo da mesa. Se
+    você for pego, você destruirá sua equipe de FSAE e manchará todos os
+    outros membros da equipe. NUNCA MINTA. A última coisa é ter
+    conhecimento de quem é o carro, as ferramentas e peças, e qual
+    autoridade você tem sobre eles. Geralmente você terá em mãos coisas
+    que não utilizará. Faz sentido você trocá-las por outras coisas que
+    você, de fato, irá utilizar. Toda organização tem regras para a
+    eliminação de coisas. Não se meta em encrenca por vender propriedade
+    da faculdade sem a devida autorização.</p>
+    <p><a href="#logo">↥ <em>Retornar ao menu</em></a></p>
+    <h2 id="parte-2-projeto-manufatura-e-preparação">Parte 2: Projeto,
+    Manufatura e Preparação</h2>
+    <h3 id="o-que-é-um-carro-de-corrida">O que é um carro de
+    corrida?</h3>
+    <p>Essa parece ser uma questão estúpida, mas é surpreendente quantas
+    repostas diferentes você terá. Também é surpreendente, o quão
+    frequente os estudantes acabam desperdiçando um tempo valioso porque
+    eles nunca decidiram o que eles estão tentando criar.</p>
+    <p>Uma simples e útil definição é essa. Um carro de corrida é um
+    veiculo que não tem nada nele além do que é exigido por regra ou que
+    o faça ser mais rápido. Essa definição lhe dá duas questões
+    importantes a fazer sobre toda decisão de projeto. Isso é exigido
+    por regra? Isso fará o carro ser mais rápido? A terceira questão
+    para o FSAE é, isso vai nos trazer mais pontos? Fazer essas
+    perguntas ajudará a decidir entre diferentes conjuntos de ideias ou
+    soluções.</p>
+    <p><a href="#logo">↥ <em>Retornar ao menu</em></a></p>
+    <h3 id="equívocos-comuns">Equívocos comuns</h3>
+    <p>Um equívoco comum é que uma parte do seu carro é mais importante.
+    Algumas pessoas vão argumentar que motor, chassi ou suspensão é o
+    mais importante. Não tem uma parte mais importante do carro. Um
+    carro de corrida sem potência não é competitivo. Um carro de corrida
+    que não irá fazer curvas não é competitivo. Um carro de corrida que
+    não irá parar não é competitivo e machucará alguém. Um carro de
+    corrida que não ira durar não é competitivo. O carro é uma coleção
+    de sistemas que devem estar integrados. Ele deve acelerar, frear e
+    fazer curvas bem. Deve ser barato para se fabricar. Um carro é um
+    sistema complexo que resolve um problema complexo.</p>
+    <p>Outro equívoco é que o FSAE é um bom lugar para desenvolver novas
+    tecnologias. Nenhuma equipe de FSAE terá o conhecimento e os
+    recursos para desenvolver novas tecnologias de ponta e ainda atender
+    aos requisitos da categoria FSAE. Você pode ser inovador. Mas faça
+    isso com peças e tecnologias existentes. Algumas equipes usam novas
+    tecnologias desenvolvidas em suas universidades. Algumas equipes
+    usam novos materiais ou peças que foram doados a eles por
+    fabricantes que querem expor seus produtos.</p>
+    <p>Muito pouco num moderno carro de corrida é recente. O primeiro
+    motor de corrida com quatro válvulas por cilindro e duplo comando de
+    válvulas no cabeçote apareceu em 1916. O primeiro chassi semi
+    monocoque foi construído por volta da mesma época. A injeção
+    eletrônica de combustível foi desenvolvida nos anos 50. Chassis
+    tubulares foram estado da arte nos aviões dos anos 20. Materiais
+    compósitos datam de pelo menos nos anos 40 (várias centenas de anos,
+    se você considerar o adobe como um material compósito). Experimentos
+    com sistemas anti-travamento de freio estavam sendo realizados no
+    começo dos anos 50. A usinagem CNC está por ai desde o início dos
+    anos 70. Muito do que pensamos como “alta tecnologia” está ao nosso
+    redor há mais tempo que muitos dos que estão lendo isso. Leva-se um
+    longo tempo e muito dinheiro no desenvolvimento para a tecnologia
+    alcançar um ponto em que é razoável colocá-la num carro de corrida
+    de 5.500 dólares. A habilidade mais importante a se desenvolver é a
+    de utilizar o que está disponível para você. Se você está
+    interessado em realmente desenvolver novas tecnologias, existem
+    competições de projeto mais adequadas do que o FSAE.</p>
+    <p>Um equívoco final é que competitividade no FSAE vem de ter o
+    melhor carro da competição. Competitividade vem de ter a melhor
+    combinação de carro, pilotos e apresentações. A equipe com mais
+    pontos vence a competição. Se você quer vencer, tome decisões que
+    adicionam mais pontos ao total na competição.</p>
+    <p>A maioria dos pontos está disponível nas provas dinâmicas. O
+    piloto é a maior variável na determinação de quão bem um carro irá
+    desempenhar. Não é por acaso que os pilotos de Formula 1, CART e
+    NASCAR são os atletas profissionais mais bem pagos do mundo. Na
+    preparação para a corrida de FSAE, o treinamento e a seleção dos
+    pilotos são rotineiramente negligenciados. No momento em que esse
+    texto foi escrito, apenas um punhado de equipes chegaram a formas
+    eficazes de treinamento de pilotos. Para muitas equipes, bons
+    pilotos ocorrem por acaso e não por “projeto”. Esperançosamente,
+    mais equipes irão desenvolver uma abordagem sistemática para o
+    treinamento e a seleção de pilotos.</p>
+    <p><a href="#logo">↥ <em>Retornar ao menu</em></a></p>
+    <h3 id="lições-aprendidas-da-maneira-mais-difícil">Lições aprendidas
+    da maneira mais difícil</h3>
+    <h4 id="lição-número-1-make-it-simple">Lição número 1 – “Make it
+    SIMPLE”</h4>
+    <p>Tatue isso na sua testa, coloque uma anotação no espelho do seu
+    banheiro ou use isso como um mantra de meditação. Faça o que for
+    preciso para gravar no seu cérebro que você vai fazer o carro o mais
+    simples possível.</p>
+    <p>Primeiro, tenha em mente que você não será capaz de chegar a um
+    projeto completamente novo a cada ano e tê-lo construído e
+    funcionando em nove meses. Uma dica é reutilizar quaisquer bons
+    projetos que você tenha de anos anteriores. Se você tem um sistema
+    do carro do ano passado que funciona e funciona bem, use-o
+    novamente. Faça pequenas melhorias se necessário, mas mantenha o
+    trabalho de reformulação no mínimo. Economize seu tempo e energia
+    para os sistemas que foram menos bem sucedidos em anos
+    anteriores.</p>
+    <p>Para qualquer sistema ou parte que requer uma grande
+    reformulação, mantenha-o simples. Você percebe, depois que ter
+    projetado e construído algumas peças e sistemas, que é mais difícil
+    fazer algo simples que fazer algo complexo. É fácil fazer coisas que
+    são complexas e pesadas. É mais difícil fazer coisas que são
+    complexas e leves. O mais difícil de todos, é fazer coisas que são
+    simples e leves. Para ser competitivo você faz as coisas simples e
+    leves.</p>
+    <p>A simplicidade é difícil de alcançar porque demanda muito
+    pensamento, planejamento e iterações de projeto. A simplicidade gera
+    belas recompensas. Eu li que William Kettering, o chefe de
+    engenharia da GM, quando realizava projetos marcantes, como quando
+    concebeu e desenvolveu o motor Chevy small-block, tinha uma frase
+    escrita na parede de seu escritório que dizia: “Peças deixadas fora
+    não pesam nada, não custam nada e não causam problemas de
+    serviço.”.</p>
+    <p>Uma das razões não técnicas para manter os projetos simples e com
+    baixo número de peças é que, para uma indústria, haverá menos
+    estoque para controlar e estoque=$$$. Isso se torna importante na
+    sua prova de Marketing. Para você, o competidor, significa carregar
+    menos peças de reposição para a pista. Você quer minimizar não só o
+    número total de peças, mas também o número de diferentes tipos de
+    peças.</p>
+    <p>Outro ponto é que mais peças levam mais tempo para serem
+    montadas. O tempo de montagem deve ser contabilizado no relatório de
+    custos. Uma montagem longa significa mais tempo na oficina
+    construindo o carro e menos tempo pilotando ele. Na competição, as
+    coisas quebram nos piores momentos. Frequentemente você tem que
+    desmontar metade do carro para consertar e há somente uma hora para
+    você estar na linha de largada. Isso ACONTEÇE. Quanto mais peças
+    para montar, menos provável que você faça a corrida. Você também tem
+    mais oportunidades para montá-las errado. Você ficará constrangido
+    ou alguém poderá se machucar quando isso acontecer. Eu vi um carro
+    quebrar porque os alunos, com pressa, esqueceram-se de colocar as
+    porcas nos parafusos que fixam as bandejas no carro!</p>
+    <p><a href="#logo">↥ <em>Retornar ao menu</em></a></p>
+    <h4 id="lição-número-2-força-massa-x-aceleração-fma">Lição número 2
+    – Força = Massa x Aceleração (F=MA)</h4>
+    <p>O ponto de se construir um carro de corrida é maximizar a
+    aceleração em qualquer direção que o piloto desejar ir. Aplicando
+    uma álgebra simples, temos Aceleração = Força / Massa (A=F/M). F
+    (força) é efetivamente limitada a 80-90hp pelo restritor de admissão
+    de ar do motor. O único caminho irrestrito de fazer um carro mais
+    rápido é minimizar M (massa). O motor é, em muitos sentidos, o
+    coração do carro. No entanto, o mais forte coração só pode fazer
+    muito se o resto do corpo não estiver acima do peso.</p>
+    <h4
+    id="lição-número-3-o-empacotamento-e-a-integração-guiam-90-do-projeto">Lição
+    número 3 – O empacotamento e a integração guiam 90% do projeto</h4>
+    <p>Uma das coisas mais difíceis sobre projetar um carro de FSAE é
+    pensar sobre tudo que precisa ser montado no carro e, depois,
+    integrá-los no projeto. Esse é o primeiro grande projeto com
+    protótipo que muitos de vocês têm trabalhado. O que frequentemente
+    acontece com equipes inexperientes é que os principais componentes
+    são projetados e construídos, em seguida, a equipe começa a montar o
+    carro e imediatamente corre para coisas necessárias para fazer
+    funcionar o carro que ninguém havia pensado a respeito. Pode ser tão
+    simples quanto porcas, parafusos e braçadeiras, ou pode ser um
+    sistema importante. Você deve planejar com antecedência onde
+    empacotar todos os pequenos e grandes componentes. Isso demora, mas
+    economiza tempo no total. Se você não está pensando sobre questões
+    de integração ao longo do processo de projetar e construir seu
+    carro, você gastará incontáveis horas tentando descobrir como montar
+    e empacotar coisas críticas, como tanque de combustível, coletores
+    de admissão ou baterias que poderiam ter sido empacotados facilmente
+    se tivesse pensado mais sobre onde colocá-los inicialmente. Por
+    exemplo, uma equipe encontra que o lugar perfeito para instalar uma
+    peça. Somente para realizar essa instalação, será necessário mover
+    um tubo do chassi meia polegada ou mais numa direção não crítica.
+    Assim que o chassi está soldado, é tarde demais para fazer tais
+    mudanças. Uma vez que muitos de vocês são engenheiros, conseguir uma
+    boa colocação na prova de projeto traz grande prestígio. É
+    importante para o futuro da equipe e de sua carreira fazer bem.</p>
+    <p><a href="#logo">↥ <em>Retornar ao menu</em></a></p>
+    <h4 id="lição-número-4-leia-as-regras">Lição número 4 – Leia as
+    regras</h4>
+    <p>Com uma regularidade impressionante, os estudantes não leem as
+    regras e projetam coisas que têm que ser alteradas substancialmente
+    para serem legais. Essas peças quase sempre se tornam pesadas,
+    complicadas, caras e propensas a falhas. A qualquer hora vários
+    lotes de peças ou peças são colocados no último minuto, o carro
+    inteiro se torna pesado, confuso e propenso a falhas. Reparos de
+    última hora são fáceis de detectar. Os juízes de projeto os veem e
+    deduzem pontos. Além disso, desperdiça um tempo que você poderia
+    estar pilotando ou dormindo, algo que nenhuma equipe de Formula tem
+    o bastante.</p>
+    <h4
+    id="lição-número-5-deixe-tempo-o-suficiente-para-os-detalhes">Lição
+    número 5 – Deixe tempo o suficiente para os detalhes</h4>
+    <p>Um dos aspectos menos compreendidos no projeto de um FSAE é que
+    as menores peças consomem a maior parte do tempo. Tipicamente, os
+    principais componentes do carro, o chassi, bandejas de suspensão,
+    sistemas de admissão e exaustão, etc., levam em torno de 30% do
+    tempo total de construção do carro. O trabalho de detalhe, como
+    pedais, fixação dos pedais, fixação do motor, linhas de combustível,
+    pintura, cubos das rodas, painel de instrumentos, mancais do
+    diferencial, semi-eixos, sistemas de troca de marcha, chicotes,
+    braçadeiras, espaçadores, roteamento das linhas de combustível,
+    roteamento das linhas de freio, mancais do volante, mancais da
+    coluna de direção, cabo do acelerador, acionamentos do brake-light,
+    chapa de proteção da corrente e retentores, tomam o resto do tempo.
+    Esse é, talvez, o trabalho mais importante. Diz-se, frequentemente,
+    que Deus está nos detalhes. Independentemente de aspectos religiosos
+    de fazer um bom trabalho sobre os detalhes, os detalhes são os que
+    separam o melhor dos demais. O tempo deve ser planejado com isso em
+    mente. Sistemas e componentes bem integrados são uma grande parte do
+    que faz um carro de corrida competitivo.</p>
+    <p>Construtores de carros novatos sempre subestimam grosseiramente o
+    tempo que leva para ter um veículo no chão e correndo bem. Quando eu
+    estava trabalhando no meu primeiro projeto de um FSAE, um membro
+    experiente me disse para usar a regra do pi ao planejar qualquer
+    parte do carro. A regra do pi afirma que, quando você tiver feito
+    sua estimativa mais longa possível do tempo necessário para fazer
+    algo, multiplique a estimativa por pi (3,14) e essa será a
+    quantidade mínima de tempo que vai demorar para fazer essa coisa.
+    Ela funciona! As coisas sempre acontecem de forma que você não pode
+    planejar. Uma empresa de usinagem está fechada num horário que
+    supostamente estaria aberta. Você precisa de dados de alguém que
+    acabou de encontrar um novo namorado ou namorada, ou pior, terminou
+    com alguém. Alguém quebra uma ferramenta que é crítica para o seu
+    projeto. Seu professor decide fazer um curso mais “desafiador”. Você
+    é chamado para uma entrevista na empresa dos seus sonhos. Seus pais
+    veem suas notas e exigem mudanças. Todas essas coisas acontecem aos
+    estudantes enquanto tentam terminar uma peça simples.</p>
+    <p>Um engano de muitos novatos é que você pode projetar, construir e
+    instalar uma peça e estará feito. Nunca é tão simples. Um carro de
+    corrida é sempre um trabalho em andamento assim como é cada peça
+    nele. Não é incomum passar por três ou quatro iterações de um
+    projeto básico para que você tenha alguma coisa boa. Também não é
+    incomum, em seus primeiros três o quatro projetos, chegar no meio do
+    caminho de construir a peça ou sistema e então pensar em uma maneira
+    substancialmente melhor para resolver o problema. É fácil projetar
+    algo que não pode ser construído com as ferramentas que você tem.
+    Uma sequência típica de eventos é assim. Projetar uma peça.
+    Reprojetar, pois você teve uma idéia melhor. Começar de novo, porque
+    você não pode comprar o material certo para o novo projeto.
+    Reprojetar, porque as peças que você fixou nela mudaram ou você
+    percebeu que esqueceu algo. Reprojetar e construir, testar.
+    Encontrar problemas. Fazer mais mudanças. Testar novamente e fazer
+    os ajustes finais. Subitamente, a peça que você pensou que ia levar
+    dois dias para terminar tomou duas semanas.</p>
+    <p><a href="#logo">↥ <em>Retornar ao menu</em></a></p>
+    <h4 id="lição-número-6-tenha-a-eletrônica-funcionando-cedo">Lição
+    número 6 – Tenha a eletrônica funcionando cedo</h4>
+    <p>Uma história que ouvi de muitas equipes é assim. “Tivemos uma
+    pessoa nova do motor esse ano e/ou começamos a usar um novo sistema
+    de injeção de combustível. A equipe do motor trabalhou muito duro
+    para projetar e construir uma admissão e exaustão. Quando esses
+    foram feitos em Abril, começaram a ligar a eletrônica. Nós tivemos
+    muitos problemas. O motor não funcionou até duas semanas atrás. Não
+    está rodando certo e nós tivemos quase nenhum tempo em bancada.” Por
+    alguma razão, os inexperientes (isso me inclui) têm uma tendência de
+    pensar que instalar a injeção de combustível ou outra eletrônica do
+    motor será fácil. Não é. Acho que somos iludidos nisso pela relativa
+    facilidade com a qual você pode instalar um aparelho de som ou um
+    Playstation. Eu nunca estive envolvido com uma injeção de
+    combustível desenvolvida por estudantes, mas eu suponho que os
+    problemas são dez vezes mais complicados que os problemas de um
+    equipamento disponível comercialmente. Ligar os fios é relativamente
+    fácil. Entretanto, esse é somente o começo do processo. Cada fio é
+    conectado a um sensor. Os sensores devem ser fixados em algum lugar.
+    Quase nenhum dos motores comumente disponíveis para um FSAE foi
+    projetado com sensores de injeção eletrônica em mente. Você está por
+    sua conta para encontrar um lugar funcional e construir as
+    fixações.</p>
+    <p>As áreas de maior problema são os sensores de posição do
+    virabrequim e (se você estiver utilizando um) posição do eixo do
+    comando de válvulas. Esses consistem geralmente em sensores
+    magnéticos ou de efeito Hall, que geram um sinal a partir de sua
+    proximidade com uma roda fônica. A roda fônica é um pedaço de metal
+    com dentes usinados, que fica conectada ao virabrequim. Tanto o
+    sensor e a roda fônica devem estar fixados em algum lugar no final
+    do virabrequim onde os projetistas do motor não deixaram espaço para
+    isso. Isso leva algum tempo. Nisso é onde você precisa de
+    engenheiros elétricos. Os sensores e os geradores de sinal devem
+    estar com o espaçamento correto entre eles para obter um sinal que o
+    computador consiga ler.</p>
+    <p>Você tem que começar a instalação, ajustes e depuração da
+    eletrônica do motor tão cedo quanto for humanamente possível. Isso
+    tem que começar antes de você ter seus sistemas de admissão e
+    exaustão projetados. Equipes com sorte o suficiente para ter um
+    dinamômetro precisam ter o motor instalado nele assim que o motor
+    estiver em sua posse. Se você não tiver um, construa uma bancada
+    para teste. Ela não precisar ser ideal. Só precisa ser algo em que
+    você possa montar o motor para fazê-lo funcionar muito antes que o
+    carro esteja pronto. Levará um bom tempo para projetar e construir a
+    admissão e exaustão final para seu carro. Não espere até que eles
+    estejam prontos para ligar o motor; ligue-o antes de suas férias de
+    Natal/Ano novo. Crie coletores de admissão e exaustão temporários.
+    Eles não precisam estar dentro da regra ou mesmo serem práticos para
+    o carro final. Você precisa fazer a depuração do sistema.</p>
+    <p>Assumindo que sua eletrônica está funcionando corretamente, as
+    chances são muito boas de os mapas de injeção e avanço não estarem
+    nem perto do que irá ligar o motor e tê-lo confiável na marcha
+    lenta. Novamente, com exceção dos problemas elétricos, você pode
+    planejar 20-60 horas de tentativa e erro só para fazer o motor ligar
+    e funcionar de forma confiável quando frio ou quente. Lembre-se da
+    regra do pi.</p>
+    <p><a href="#logo">↥ <em>Retornar ao menu</em></a></p>
+    <h4 id="lição-número-7-evite-falhas-de-peças-de-r199">Lição número 7
+    – Evite falhas de peças de R$1,99</h4>
+    <p>No Formula SAE, como em outras formas de corrida, você verá, de
+    vez em quando, falhas espetaculares dos principais componentes. A
+    maioria dos problemas que cercam os carros vem de peças que custam
+    R$1,99 ou menos. De fato, muitas falhas espetaculares começam de
+    algo simples como um parafuso que quebra e obstrui outro mecanismo
+    que funcionava perfeitamente. Muitos carros de FSAE param quando
+    junções críticas do sistema de arrefecimento falham. Braçadeiras
+    falham regularmente, na maioria das vezes porque são instaladas de
+    maneira inapropriada ou reutilizadas muitas vezes. Tenha certeza que
+    você está usando peças da maneira que elas foram projetadas para
+    serem usadas ou de uma forma que não irá sobrecarregá-las. Em 1995,
+    um estudante da MSU usou um tubo de plástico de 90º projetado para
+    mangueiras de jardim no sistema de arrefecimento. Durou até o último
+    piloto na última prova do final de semana sair da pista e desligar o
+    motor. Tivemos sorte. Se tivesse falhado um minuto antes, o carro
+    não teria terminado a prova e a MSU teria ficado perto da 40ª ou 50ª
+    colocação ao invés da 28ª.</p>
+    <p><a href="#logo">↥ <em>Retornar ao menu</em></a></p>
+    <h3 id="sugestões-para-começar-o-projeto">Sugestões para começar o
+    projeto</h3>
+    <h4 id="inventário">Inventário</h4>
+    <p>Uma das soluções mais inteligentes que as equipes utilizam para
+    planejar e manter a organização de tudo o que tem que ser feito no
+    carro é pegar um carro montado e pronto para correr e listar todas
+    as peças dele. Comece por itens grandes, como chassis, carenagem,
+    motor, volante, molas e amortecedores e vá descendo até as partes
+    pequenas, como porcas, parafusos, arruelas, borboletas do shifter,
+    suportes e cabos, o que leva um tempo maior para ser feito. Uma vez
+    que vocês possuam a lista de tudo o que deve ter no carro, use-a
+    como um guia para criar um novo carro. Como o novo projeto começa
+    logo no começo do ano, mantenha a lista como referência e vá
+    riscando as peças que ficarem prontas. Sempre se pergunte: “Nós nos
+    planejamos para a peça X? Como está o andamento da peça Y?” Vai
+    custar um tempo catalogar todas as peças do carro. Porém, durante o
+    ano isso pode levar a um resultado muito melhor no final. A partir
+    do momento que vocês precisam de um inventário de peças para a prova
+    de custos, este também se torna um roteiro para sua prova de
+    custos.</p>
+    <p><a href="#logo">↥ <em>Retornar ao menu</em></a></p>
+    <h4 id="chassis">Chassis</h4>
+    <p>É crítico que o chassis fique pronto o mais cedo possível, ou
+    pelo menos que se tenha um modelo em escala real para ele. O
+    “empacotamento das peças” conduz a 90% das decisões de projeto. O
+    chassis é o “pacote”, onde tudo deve ser encaixado.</p>
+    <p>Existem três grupos de “pontos críticos” que vocês precisam para
+    o projeto. O primeiro deles são as dimensões do cockpit e a posição
+    dos controles do veículo (posição do volante, câmbio manual,
+    borboletas de shifter, etc.), o segundo são as dimensões do motor e
+    de todo o powertrain, e por fim os pontos de suspensão. As dimensões
+    do motor são as mais fáceis, assumindo que vocês possuam um motor.
+    Assim que a equipe for formada, coloque um pessoal para ficar
+    responsável em tirar todas as medidas do motor, principalmente as
+    medidas de fixação dele no chassis. O próximo passo é fazer medidas
+    para o cockpit. Para testar ergonomia, um esboço de cockpit pode ser
+    uma caixa onde várias pessoas podem testar diferentes posições para
+    o volante, pedais, shifter e alavancas. Encontrem um arranjo que
+    seja confortável, faça tudo ser de fácil utilização e coloque o CG
+    do piloto o mais baixo possível. Vocês precisarão de ajustes para
+    pessoas de diferentes tamanhos, assim como uma combinação de
+    paddings e ajustes dos pedais. Meça quanto espaço é necessário para
+    a movimentação do piloto, prestando atenção aos cotovelos, joelhos e
+    pés.</p>
+    <p>Os pontos de suspensão geralmente são os que tomam mais tempo. A
+    geometria da suspensão deve equilibrar vários elementos em conflito
+    e leva tempo para se chegar em uma boa solução. A partir do momento
+    em que vocês tiverem a posição de pilotagem pronta, os pontos de
+    suspensão também devem estar. A partir daí, vocês se sentam junto a
+    regra e aos seus conhecimentos de estruturas e brincam de “ligar os
+    pontos”.</p>
+    <p>É normal que esses pontos entrem em conflito. A cremalheira da
+    direção regularmente se situa entre o pé ou as pernas do piloto. A
+    única coisa que você pode fazer é saber conciliar. A tentação é
+    conciliar para o lado da funcionalidade do carro e ignorar a
+    ergonomia do piloto. Porém, se o piloto não consegue utilizar os
+    controles facilmente, o carro não será exigido nos seus limites. Os
+    pilotos são as maiores variáveis durante as provas dinâmicas. Faça
+    com que os comandos sejam os mais fáceis possíveis. Os pilotos terão
+    que utilizar todos os comandos: o acelerador, freio, shifter e
+    embreagem, tudo isso EM MOVIMENTO</p>
+    <p>Uma coisa que te ajuda a se concentrar na sua tarefa é ter uma
+    foto de como o carro deve ser quando ele estiver terminado. Isso é
+    difícil sem um chassi, mas é possível adivinhar por centímetros
+    aonde estarão a maioria dos “pontos críticos” e criar um esboço a
+    partir deles. Vocês certamente conseguirão chegar bem próximos para
+    começarem a projetar as principais estruturas, sem ter definido os
+    pontos críticos ainda. Quanto mais cedo as pessoas conhecerem o
+    espaço que cada peça tem, mais rápido elas começarão a eliminar
+    ideias como coletores de admissão de três metros de comprimento, e
+    irão se focar em algo que encaixe e seja funcional.</p>
+    <p>Em 1996, quando esse texto foi escrito, vocês precisam construir
+    um carro de 500 libras e $6000. Vocês precisam de pelo menos um mês
+    de testes para aperfeiçoar e tirar dados do carro, assim como para
+    os pilotos se acostumarem com o carro que eles têm nas mãos. Se
+    vocês querem ser uma equipe campeã, esse é o preço que vocês têm que
+    pagar.</p>
+    <p><a href="#logo">↥ <em>Retornar ao menu</em></a></p>
+    <h4 id="powertrain-e-eletrônica">Powertrain e Eletrônica</h4>
+    <p>O sistema de powertrain e eletrônica de um carro de FSAE são
+    relativamente simples. Tudo é baseado em tecnologia que foi
+    desenvolvida nos últimos 40 a 100 anos. Não subestime o tempo que
+    deverá ser gasto para fazer tudo funcionar. Você irá valorizar cada
+    vez mais o trabalho diário que tem que ser feito conforme vocês irão
+    fazendo.</p>
+    <p>A pergunta que o grupo sempre começa é a seguinte: “Qual tipo de
+    motor nós iremos utilizar?”. É uma pergunta importante a ser feita.
+    Sem um motor, o carro não vai a lugar algum. Porém, existe muito
+    trabalho que é independente da escolha do motor e que pode, e deve,
+    ser começado enquanto as essas escolhas ainda estão sendo feitas. Um
+    motor precisa ser conectado a um diferencial. O diferencial precisa
+    ser conectado à juntas homocinéticas e semi-eixos para levar o
+    torque aos pneus. Se vocês utilizam uma corrente ou correia para
+    levar o torque para o diferencial, essa corrente irá esticar, e
+    vocês precisarão de um esticador para ajustá-la. Uma coroa deve ser
+    acoplada ao diferencial. Vocês terão que projetar isso. As peças que
+    ligam o diferencial com as homocinéticas quase sempre devem ser
+    projetadas e construídas pelas equipes. Vocês podem ter 99% de
+    certeza que não encontrarão semi-eixos com o comprimento que vocês
+    precisam no mercado, e vocês terão que projetá-los e manufaturá-los
+    também. Todas essas peças devem ser fortes o suficiente para
+    transmitir o torque do motor e o torque de frenagem, se vocês
+    estiverem utilizando um freio acoplado ao diferencial, além de serem
+    leves e baratas ao máximo. Isso exige um projeto inteligente,
+    prestando atenção aos detalhes, além da precisão da usinagem. Esta
+    atenção aos detalhes separa as equipes de ponta das equipes
+    comuns.</p>
+    <p>Um projeto que pode começar antes da escolha do motor é o sistema
+    de arrefecimento: isto é MUITO importante. Um carro de corrida que
+    não se refrigera não faz mais nada. Os detalhes finais do projeto
+    dependerão do motor, mas existem muitos fundamentos que devem ser
+    analisados antes. Os cálculos de arrefecimento não tem segredo.
+    Existem provavelmente cem milhões de veículos nas ruas todo o dia
+    que não superaquecem. Porém, alguém na equipe precisa aprender como
+    isso é feito. Alguém deve construir ou pegar emprestado uma bancada
+    de fluxo para medir todas as temperaturas, pressões e taxas de fluxo
+    relevantes. Se vocês estão utilizando um motor refrigerado por
+    liquido, vocês terão que fixar um trocador de calor ou radiador em
+    algum lugar. Alguém deve garantir que ele será fixado no chassi de
+    um jeito que ele não sofrerá impactos, tenha ar frio suficiente
+    entrando e uma saída adequada para o ar quente. Não assuma que um
+    radiador de moto será suficiente. Inúmeras corridas já foram
+    perdidas por causa disso.</p>
+    <p>Um último item, que necessita de tempo e planejamento, é a
+    escolha de relações de marcha. A relação final é a única que vocês
+    podem alterar facilmente. Se a sua equipe tem recursos de customizar
+    configurações para as relações primárias dentro da caixa de câmbio,
+    parabéns! Vocês têm um nível de sofisticação que excede qualquer
+    coisa que eu já tenha visto em equipes de FSAE. Tanto mudando as
+    relações primarias ou apenas a relação final, o torque do motor deve
+    ser utilizável pelo piloto em qualquer prova que ele esteja
+    pilotando. Existem bons livros sobre esse assunto. Um erro que é
+    geralmente cometido é escolher a melhor relação de marchas apenas
+    para a prova de aceleração. Se vocês terão apenas uma relação
+    disponível na competição, otimize-a para a prova de enduro. É nela
+    onde vocês podem conseguir mais pontos e onde o carro será mais
+    utilizado.</p>
+    <p><a href="#logo">↥ <em>Retornar ao menu</em></a></p>
+    <h4 id="suspensão">Suspensão</h4>
+    <p>O trabalho da suspensão começa com a determinação da geometria
+    dela. Isto acaba por determinar os pontos de montagem para a caixa
+    de direção e os braços da suspensão. Existe muito trabalho para ser
+    feito enquanto a geometria da suspensão é definida. Todas as peças
+    que a equipe não manufatura, como pneus, rodas, molas, amortecedores
+    e rolamentos, juntas heim e juntas esféricas devem ser compradas de
+    algum lugar. O desafio é encontrar peças que sejam de tamanho
+    apropriado para um carro tão leve como o FSAE. Se você copiar
+    exatamente as peças de um carro de Formula 1 ou outros carros com um
+    peso mínimo bem maior que um FSAE, suas peças serão
+    superdimensionadas. Eu já vi carros utilizando terminais esféricos
+    que poderiam suportar carregamentos de suspensão de um Chevrolet
+    Camaro. Terminais são comercializados em vários tamanhos.
+    Dimensione-os apropriadamente. Amortecedores construídos para carros
+    pesam de 4 a 5 vezes mais que os apropriados para FSAE. Peças
+    grandes adicionam peso e são mais caras. A nova tendência é utilizar
+    amortecedores específicos para FSAE.</p>
+    <p><a href="#logo">↥ <em>Retornar ao menu</em></a></p>
+    <h4 id="dicas-gerais">Dicas gerais</h4>
+    <p>Não faça coisas maiores que o necessário. Porém, pense nas coisas
+    com cuidado. Lembre-se que suas peças devem durar mais do que para
+    um uso normal. Partes da suspensão e do chassi devem ser capazes de
+    suportar solavancos mais fortes que ocorrem ocasionalmente. A galera
+    do powertrain deve se lembrar que, inevitavelmente, alguém vai levar
+    o giro do motor até 9500 rpm e soltar a embreagem de uma vez,
+    esperando queimar pneu igual ao John Force. Aliás, isso não
+    funciona. Carros de FSAE raramente possuem torque suficiente para
+    sair queimando pneu na arrancada.</p>
+    <p>Lembrem-se que carros de corrida são máquinas cuja manutenção é
+    frequente. É altamente aconselhável projetar peças que possam ser
+    desmontadas e remontadas rapidamente. Isso não é a desculpa para
+    fazer algo mal feito. Isso significa que partes que se desgastam
+    rapidamente, como pastilhas e discos de freio, rolamentos e buchas
+    da suspensão e correntes de transmissão podem ser dimensionados para
+    terem uma vida útil curta. Você deve ser sistemático sobre checar
+    todas essas peças antes do carro começar a andar. Reconstrua ou
+    substitua tudo o que possa estar duvidoso no carro. Não seja
+    negligente!</p>
+    <p>Uma última dica. Quando possível, faça melhorias a partir de
+    peças já prontas. É muito mais fácil pegar essas peças já projetadas
+    e analisar seus pontos fortes e fracos do que começar um projeto do
+    zero, especialmente se esse é o primeiro carro que você constrói.
+    Sua faculdade possui varias ferramentas que podem te ajudar a
+    descobrir onde reduzir peso e diminuir os custos em cada peça.</p>
+    <p><a href="#logo">↥ <em>Retornar ao menu</em></a></p>
+    <h4 id="modelo-em-escala-real">Modelo em Escala Real</h4>
+    <p>Criar um carro leve e bem integrado significa compactar todas as
+    peças em três dimensões. Para ver e pensar em três dimensões, a
+    solução utilizada na indústria automobilística é apropriada para o
+    FSAE. Vocês podem construir maquetes em escala para ter noção onde
+    tudo irá se encaixar, ou utilizar programas de CAD para gerar
+    modelos virtuais do carro. Essa ultima opção exige um pessoal
+    treinado na utilização desses softwares, porém os resultados são
+    mais rápidos e melhores.</p>
+    <p><a href="#logo">↥ <em>Retornar ao menu</em></a></p>
+    <h3 id="lições-aprendidas-nas-competições-de-fsae">Lições aprendidas
+    nas competições de FSAE</h3>
+    <h4 id="provas-estáticas">Provas estáticas</h4>
+    <p>Seja visual. Você precisa passar muitas informações em um período
+    de tempo curto. Uma foto vale mais do que mil palavras. Pense em
+    maneiras gráficas para representar o que precisa ser dito.</p>
+    <h4 id="prova-de-custos">Prova de Custos</h4>
+    <p>O grosso do trabalho é o relatório de custos. A apresentação
+    serve para esclarecer e defender assuntos que os juízes não
+    entendam. Ela é, na maior parte das vezes, um questionamento do
+    relatório de custos. Os apresentadores devem ser, de preferência, os
+    responsáveis pela elaboração do relatório. Entre eles, é necessário
+    que cada um saiba onde cada peça do carro foi colocada no relatório.
+    É complicado argumentar e discutir com os juízes quando um olha para
+    o outro e diz: “Uh... nós não colocamos os pedais na parte do
+    chassi? Talvez eles estejam na parte do freio, então..” Isso é
+    antiprofissional. Os juízes esperam que vocês tenham todos os seus
+    relatórios bem organizados. Eles podem até ser caridosos devido ao
+    fato de ser um relatório de estudantes, porém isso mudará se alguma
+    equipe vier com um relatório tão profissional quanto os que eles
+    estão acostumados no seu dia-a-dia de trabalho. E acredite, isso vai
+    acontecer.</p>
+    <p>A pontuação vem do preço final do carro e de quão fácil é de
+    compreender as informações do relatório. Eles selecionam valores
+    específicos e os comparam com os valores das outras equipes e com a
+    média da competição. Se ficar muito abaixo do valor médio, ela é
+    ajustada para cima com uma penalidade, até que seja realmente
+    verificado que a peça é barata. Se você esquecer algum item, eles o
+    ajustam a média com uma certa penalidade até os juízes verificarem
+    que o carro realmente não precisa desse item, mesmo se ela for
+    facultativa. Existem algumas coisas que eles exigem ver no carro.
+    Por exemplo, vocês serão penalizados por não incluírem a pintura em
+    um chassi de aço. Pode custar uma penalidade de $10 se vocês não
+    colocarem Krylon suficiente para prevenir a ferrugem. Os juízes
+    sabem o que deve custar e ser relatado. Se vocês se desviarem disso,
+    então é melhor ter uma documentação na forma de recibos ou cotações
+    de preços dos fornecedores. Toda equipe novata tenta economizar
+    dinheiro deixando de colocar os “assemblies” de cada subsistema e de
+    todo o carro. Os juízes sabem dessas coisas e não vão cair na de
+    vocês.</p>
+    <p>Uma boa ideia é começar cada seção do relatório com uma breve
+    descrição sobre as peças e como elas funcionam no carro, algo como
+    “O sistema de freio possuí dois cilindros mestre ligados ao pedal de
+    freio por um bias bar. Os pedais foram projetados e construídos por
+    nós. O bias bar e seus componentes foram comprados. Existem três
+    calipers, um em cada roda dianteira e um agindo no diferencial, na
+    parte traseira do carro...”. O objetivo é esclarecer exatamente como
+    as coisas são montadas. Um bom teste para se fazer quando o
+    relatório estiver pronto é entregá-lo a alguém que não esteja
+    familiarizado com o carro para ver se essa pessoa entende o que está
+    descrito nele, e quais perguntas irão surgir. Quanto mais fácil for
+    para os juízes lerem o seu relatório e mais rápido eles
+    compreenderem o seu carro, mais alta será a sua nota. Esses são
+    pontos relativamente fáceis de serem ganhos. Leva tempo para montar
+    um bom relatório de custos. Comece-o no começo do ano.</p>
+    <p>Desde 1995, os juízes dão feedback dos relatórios de custos para
+    as equipes. A partir disso, os relatórios começaram a melhorar
+    significativamente. A tendência é de termos cada vez mais relatórios
+    mais elaborados. Preencher um fichário com 3 polegadas de folhas não
+    é incomum. Procure administradores e engenheiros de produção para
+    ajudá-los com o relatório. Eles poderão dar uma opinião mais
+    elaborada. Qualquer pessoa que leia seu relatório não pode ter
+    duvidas sobre como as peças são, como e quem irá manufaturá-las,
+    quanto tempo será necessário para montá-la e quanto de material foi
+    gasto.</p>
+    <p><a href="#logo">↥ <em>Retornar ao menu</em></a></p>
+    <h4 id="prova-de-projeto-design-judge">Prova de projeto (Design
+    Judge)</h4>
+    <p>O Design Judge é a prova estática mais prestigiada. Ganhá-la dá a
+    equipe o direito de se “gabar” pelo projeto. Há uma certa dose de
+    sorte para vencer as provas dinâmicas. As condições da pista mudam.
+    As coisas são encurtadas ou remarcadas por causa do tempo. As vezes
+    outros carros mais lentos te atrapalham na pista. Marcar pontos no
+    design judge vai ajudá-los a compensar problemas em outras provas
+    nos olhos dos patrocinadores e da universidade.</p>
+    <p>Existem duas coisas de fato que são julgadas no design judge. A
+    primeira é, claro, o carro. A segunda é o quão bem vocês conhecem
+    ele.</p>
+    <p>A primeira e mais importante para os juízes de DJ é ser
+    assertivos. Geralmente, os juízes começam a olhar o carro como um
+    todo e partem para alguns detalhes. Muitos deles não fazem
+    perguntas. Eles olham o que vocês fizeram e avaliam. Eles são seres
+    humanos, não deuses. Eles assumem sobre algumas coisas que eles veem
+    e as vezes elas podem estar erradas. Eles podem não enxergar o mesmo
+    que você ou não compreender o porquê de uma coisa estar daquele
+    jeito, até que você explique para eles. Eles também estarão
+    analisando outros carros durante o dia e talvez não tenham tempo
+    para perceber a boa ideia que vocês tiveram e aplicaram no carro. Os
+    juízes também têm preferencias. Eles sabem muito sobre o que
+    funciona e o que não funciona. Vocês devem estar prontos para
+    explicar claramente o que você projetou e porque você tomou essas
+    decisões para o seu carro. Apresentações montadas as 4 horas da
+    manhã na véspera da competição não irão dar muitos pontos para
+    vocês. Programem-se antecipadamente, de preferencia, a partir do
+    meio do ano.</p>
+    <p>Uma vez que vocês tem que conversar com os juízes, vocês precisam
+    demonstrar conhecimento e bom senso. A questão subjacente em um juiz
+    é “por que?”. Por que vocês fizeram isso desse jeito? Como foi o
+    processo de desenvolvimento? Vocês realmente sabem o que tem em
+    mãos? Engenharia é, na sua essência, uma forma de arte, a arte de
+    escolher soluções que melhor resolvem os problemas apresentados. É
+    importante não só apresentar as melhores soluções encontradas no
+    projeto, mas também suas limitações. Os juízes querem ver que muitas
+    ideias foram apresentadas e a análise feita por vocês até chegarem
+    no resultado final. É necessário vocês já irem pensando como irão
+    apresentar seu projeto enquanto vocês ainda estão pensando nas
+    opções que têm. Como vocês irão explicar para mentes curiosas que
+    conhecem tudo sobre corrida que você pensou em todas as opções e a
+    melhor é a apresentada por vocês no seu carro.</p>
+    <p>Os juízes também querem ver dados. Você pode ter tido a ideia
+    mais brilhante da historia da humanidade no seu processo de criação.
+    Os juízes serão céticos, a menos que você os mostre dados que
+    comprovam que sua ideia funciona.</p>
+    <p>De novo, é importante utilizar recursos visuais. Quando o carro é
+    montado, um dos seus melhores projetos talvez fique escondido no
+    meio do carro. Fotos de como as coisas se encaixam ajudam muito.
+    Fotos do carro durante a construção, com vistas explodidas, gráficos
+    de potência e torque ajudam a comunicar o quão completo foi seu
+    pensamento através das escolhas do projeto.</p>
+    <p>Vocês precisam ter a maioria da equipe junta durante essa
+    apresentação, para o caso do juiz perguntar sobre alguma peça em
+    especifico do carro e a pessoa que a projetou puder explicá-la. Isso
+    também é útil para membros mais novos que futuramente irão
+    apresentar o DJ já se acostumarem com as perguntas mais frequentes
+    dos juízes. Vocês também precisam ter ferramentas junto para o caso
+    de que alguma coisa precise ser retirada para mostrar alguma peça
+    particularmente bem projetada.</p>
+    <p><a href="#logo">↥ <em>Retornar ao menu</em></a></p>
+    <h4 id="presentation-apresentaçao-de-marketing">Presentation
+    (Apresentaçao de Marketing)</h4>
+    <p>Quando estiver preparando a presentation, pense sobre o que você
+    gostaria de saber se você fosse um comprador. Se você fosse um
+    piloto não profissional de fins de semana que fosse comprar um
+    desses carros, o que seria interessante saber sobre o carro? Pelo
+    menos seu desempenho e preço. Você também gostaria de saber como ele
+    é, disponibilidade de peças e facilidades de manutenção. Pense sobre
+    outras coisas que os juízes queiram saber e coloque essas
+    informações na apresentação.</p>
+    <p>O conceito da competição é vender o projeto de um carro de
+    corrida para uma companhia que produza 1000 veículos para venda. Se
+    você for o responsável pela companhia e irá comprar o projeto, o que
+    você gostaria de saber? Você irá perguntar tudo o que um piloto não
+    profissional de fim de semana perguntaria, já que você terá que
+    vender esses carros para eles. Além disso, você irá querer saber o
+    quão difícil é produzir esse carro, quais ferramentas serão
+    necessárias para a construção e reparos nele, e assim por diante. O
+    empresário irá querer saber quais processos foram utilizados para
+    tomar suas decisões. Qual modelagem computacional foi feita? Quanto
+    teste foi feito? Ninguém irá querer comprar um carro que não foi
+    testado ou que irá quebrar frequentemente.</p>
+    <p>Após pensar pelo lado do consumidor, comece a coletar e organizar
+    as informações que serão necessárias. Pense no que torna seu carro
+    único: Seu design moderno? Sua criatividade em utilizar peças
+    baratas, acessíveis a todos, de modo inovador e apropriado? Como
+    vocês economizaram dinheiro, ferramentas, ou tempo de montagem
+    simplificando o projeto da peça X ou do subsistema Y?</p>
+    <p>Finalmente, como em todas as outras apresentações, seja visual!
+    Certifique-se que vocês possuem gráficos, tabelas, fotos e peças
+    reservas para ilustrar sua mensagem. De novo, certifique-se de que
+    sua mensagem é clara e os recursos visuais são claros também. É
+    fácil se perder em gráficos, tabelas e fotos que parecem legais mas
+    não mostram mensagem alguma. Em 1994, minha ex-equipe apareceu com
+    um vídeo profissional de 4 minutos que mostrava todo o processo
+    utilizado na criação do carro daquele ano. Os juízes nos disseram
+    após a apresentação que a primeira reação deles quando viram o vídeo
+    foi “Oh, não!”. Uma equipe anterior levou um vídeo caseiro de 10
+    minutos do seu carro andando em círculos.</p>
+    <p><a href="#logo">↥ <em>Retornar ao menu</em></a></p>
+    <h4 id="provas-dinâmicas">Provas dinâmicas</h4>
+    <p>A primeira coisa, e mais importante, é a segurança. Preste muita
+    atenção nos oficiais e comissários que estão na pista. Eles verão
+    coisas que vocês não veem. Eu vi pelo menos três carros pegando fogo
+    enquanto o piloto continuava correndo, até ele receber bandeira
+    preta. Na prova de enduro, entre em uma das áreas de ultrapassagem
+    quando tiver alguém mais rápido atrás de você. Vocês serão
+    penalizados se não fizerem isso. Muitas colocações na classificação
+    geral foram perdidas pela desatenção dos pilotos ou de um ego muito
+    grande na área de ultrapassagem. Pilote dentro dos seus limites e
+    dos limites do carro. Poucos de nós fomos abençoados com a
+    genialidade natural de dirigir rápido, como Michael Shumacker ou
+    Ayrton Senna. Não coloque você, sua equipe e toda a competição em
+    risco tentando tirar do carro mais do que ele suporta.</p>
+    <p>Uma das coisas que mais partem o coração e que são mais
+    constrangedoras para toda a equipe e acontece em toda competição de
+    FSAE é quando um carro bom quebra no meio da prova por causa de algo
+    que foi mal verificado antes do carro ir para a pista. Vocês
+    precisam desenvolver um procedimento sistemático e consciente para
+    verificar todos os parafusos, porcas, abraçadeiras, acessórios e
+    conexões elétricas toda vez antes do carro ir para a pista. Isso é
+    uma questão de segurança. Vocês não querem que peças criticas do seu
+    carro, como as rodas, saindo do carro enquanto ele está correndo. Um
+    dos jeitos mais fáceis de controlar sua preparação é fazer um
+    checklist para cada subsistema do carro. Isso lhe dá uma
+    documentação escrita do que foi verificado antes de correr, e vocês
+    não precisarão confiar na memoria de alguém que não dormiu direito
+    nas ultimas 3 ou 4 semanas.</p>
+    <p><a href="#logo">↥ <em>Retornar ao menu</em></a></p>
+        <footer style="text-align: justify;">
+        <p>Uso disponível sob licença livre <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR">Creative Commons BY-SA 4.0</a>, exceto para os conteúdos não originais desse site.
+        Construído com <a href="https://pandoc.org/">pandoc</a> e <a href="https://github.com/kognise/water.css">water.css</a>.</p><!--RRM-->
+        <details> <summary class="summary-closed">Aviso legal</summary>
+          <p>Os materiais contidos neste site são fornecidos apenas para fins de informação geral e não pretendem ser ou constituem conselhos legais ou profissionais e não devem ser invocados como tal. Não nos responsabilizamos por qualquer perda que possa surgir do acesso a este site nem pela dependência de informações encontradas no site. Na maior medida permitida pela lei, excluímos toda a responsabilidade por perdas ou danos diretos ou indiretos decorrentes do uso deste site ou das informações nele contidas.</p> 
+        </details>
+        </footer>  </body>
+</html>
