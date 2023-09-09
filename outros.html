@@ -22,19 +22,26 @@
             <li>
                 <a href="./index.html"><strong>Página inicial</strong> e mapa do site</a></li>
 
+
             <li>
                 <a href="./seguranca.html"><strong>Segurança</strong>: na oficina e na pista</a></li>
+
 
             <li>
                 <a href="./estrategia.html"><strong>Estratégia</strong> e tomada de decisão</a></li>
 
+
             <li>
                 <a href="./historicos.html"><strong>Históricos</strong>: geral e EESC</a></li>
 
+
             <li>Outros:
                 <ul>
-                <li><a href="#estrutural">Um ciclo de análise estrutural em flange</a></li>
-                <li><a href="#outros">Outros</a></li>
+                <li><a href="#mecânica-estrutural">Mecânica estrutural</a></li>
+                <li><a href="#avançado-minicurso-de-planejamento-de-experimentos">Planejamento de experimentos (estatística)</a></li>
+                <li><a href="#manufatura">Manufatura (torno)</a></li>
+                <li><a href="#sobre-fsae-e-a-competição">Sobre FSAE e a Competição</a></li>
+                <li><a href="#reflexões-construidas-durante-a-participação-no-fsae">Reflexões</a></li>
                 </ul></li>
 
           </ol>
@@ -48,33 +55,146 @@
       <p style="text-align: center; font-weight: bold; font-size: 12px;"><strong style="color: yellow;">Atenção!</strong> As ideias expostas refletem uma visão enviesada de uma
          pessoa dentro de um contexto de equipe e tecnologias da época, portanto deve ser filtrado/criticado para determinar o que é util ao leitor.
       </p>
-    <p>Arquivos fora github:</p>
+    <h2 id="mecânica-estrutural">Mecânica estrutural</h2>
+    <p>Seguem alguns estudos de mecânica estrutural que ficaram
+    interessantes. Todos no contexto de projeto de flange de roda.</p>
+    <p>Obs: não sei onde colocar, então vai aqui mesmo. Sugestão de <a
+    href="https://reliefcursos.eadbox.com/courses">curso teório e
+    prático de MEF</a> (gratuito) do NEP. <a
+    href="http://pdf.blucher.com.br.s3-sa-east-1.amazonaws.com/engineeringproceedings/simea2021/PAP48.pdf">Mais
+    detalhes.</a></p>
+    <h3 id="análise-por-elementos-finitos">Análise por elementos
+    finitos</h3>
+    <p>Refere-se a um <a
+    href="./media/estrutural/Simulações%20estáticas_v2.pptx">estudo de
+    condições de contorno em FEA aplicado à flange de roda (2012)</a>.
+    Era sabido onde a flange havia faturado, porém as simulações na
+    época do projeto não indicaram falha no mesmo. Diante disso,
+    diversas condições de contorno foram propostas buscando aquela que
+    fosse coerente com a falha real da peça. Foi observado a necessidade
+    de substituir a condição de contorno de fixação da flange pelo cubo
+    e seus devidos contatos e então aplicar a restrição ao cubo para que
+    o comportamento mecânico da simulação ficasse coerente com a
+    realidade.</p>
+    <video controls loop src="./media/estrutural/rodaEx_low.mp4" style="max-width: 600px;">
+    <a href="./media/estrutural/rodaEx_low.mp4">
+    <img src="./media/estrutural/rodaEx_low.png" title="FEA flange FSAE" style="border-radius: 1em; width: 50%;">
+    </a>
+    <p style="text-align: center; display: block;">
+    Clique na imagem para fazer o download do vídeo!
+    </p>
+    </video>
+    <h3 id="análise-de-falhas">Análise de falhas</h3>
+    <p>Anos depois, em 2014, outra flange fraturou, embora houvessem
+    aplicado as devidas condições de contorno e, se não me falha a
+    memória, um dimensionamento à fadiga de alto ciclo a partir do <a
+    href="./media/estrategia/LapSim_EESCUSP_v13.xlsm">simulador de
+    volta</a>. Nesse caso, o problema da fratura foi utilizado como
+    estudo de caso na disciplina SMM0330 – Princípios de análise de
+    falhas, ministrada na época pelo Prof. Dr. Cassius, o qual agradeço
+    imensamente os ensinamentos e a disposição de aceitar a proposta de
+    inserir aos alunos esse problema da fratura como trabalho de estudo
+    de caso na disciplina. Agradeço também aos alunos da disciplina que
+    toparam o desafio e se dedicaram às análises.</p>
+    <p>Um <a
+    href="./media/estrutural/Estudo_de_caso-1.Apresentacao_v3(incl%20FEA).pdf">documento
+    de apresentação</a>, um video com FEA da flange e outro video com
+    resumo das situações presentes em pista foram entregues como
+    condições iniciais.</p>
+    <video controls loop src="./media/estrutural/Estudo_de_caso-6.Video_3-Tensoes_princ.mp4">
+    <a href="./media/estrutural/Estudo_de_caso-6.Video_3-Tensoes_princ.mp4">
+    <img src="./media/estrutural/Estudo_de_caso-6.Video_3-Tensoes_princ.png" title="FEA flange FSAE 2" style="border-radius: 1em; width: 50%;">
+    </a>
+    <p style="text-align: center; display: block;">
+    Clique na imagem para fazer o download do vídeo!
+    </p>
+    </video>
+    <p><br></p>
+    <video controls src="./media/estrutural/Estudo_de_caso-3.Video.mp4">
+    <a href="./media/estrutural/Estudo_de_caso-3.Video.mp4">
+    <img src="./media/estrutural/Estudo_de_caso-3.Video.png" title="Casos de esforço encontrados em pista." style="border-radius: 1em;">
+    </a>
+    <p style="text-align: center; display: block;">
+    Clique na imagem para fazer o download do vídeo!
+    </p>
+    </video>
+    <p>Diversos estudos no contexto de análise de falha foram feitos
+    pelos alunos da disciplina que resultaram no <a
+    href="./media/estrutural/analise-final-formatado.pdf">relatório
+    final</a>. Diante das análises, a conclusão final da equipe foi que
+    o material de fato era o especificado (Al 7075 T6), entretanto sua
+    origem fundida conferia ao material propriedades à fadiga menores
+    (dendritas de fusão) que os dos datasheet utilizados no projeto em
+    fadiga.</p>
+    <h3 id="projeto-por-confiabilidade-estrutural">Projeto por
+    confiabilidade estrutural</h3>
+    <p>Em 2019 tive a oportunidade de abordar o projeto de vida em
+    fadiga da flange novamente, porém utilizando o paradigma de
+    confiabilidade estrutural na disciplina SET5915 - Confiabilidade
+    Estrutural, ministrada pelo Prof. Beck. No trabalho final foi feita
+    a análise da flange conforme o resumo abaixo e o <a
+    href="./media/estrutural/SET5915-Trabalho.pdf">relatório
+    final</a>.</p>
+    <p>Resumo: <em>Neste trabalho, a vida em fatiga de uma flange de
+    roda de um veículo de alto desempenho categoria Formula SAE é
+    analisada sob a ótica da confiabilidade estrutural. A partir de
+    dados de pista, medições e hipóteses, são descritas as variáveis
+    aleatórias consideradas no problema: raio da curva, raio do pneu,
+    expoente de fatiga na curva S-N, tensões equivalentes de fadiga para
+    curva à direita e à esquerda. Tais dados são alimentados no modelo
+    linear de acumulo de dano de Palmgren-Miner para curva S-N do
+    material, o qual é solucionado pelo First Order Relibility Method
+    (FORM) e deterministicamente para os valores médios. O dano e a
+    probabilidade de falha são calculados para um conjunto de número de
+    voltas. Escolhido um limite superior de probabilidade de falha
+    tolerável, é possível determinar o número da volta na qual a peça
+    deve ser substituída.</em></p>
+    <h2 id="avançado-minicurso-de-planejamento-de-experimentos">Avançado
+    – Minicurso de planejamento de experimentos</h2>
     <ul>
-    <li>VideosPalestraFSAE (450mb)</li>
-    <li>FSAE-CAASO-Historia_v2.pptx (270Mb)</li>
-    <li>Conversa sobre manuf (101MB) – ok fracionados</li>
-    <li>Conversa sobre GP (350MB)</li>
-    <li>Curso Doe FSAE</li>
+    <li>HD500G =
+    /media/rafael/c47f1d1b-2df6-4b2b-b7ce-07a116a218ad/Cursos/MinicursoDoE-FSAE</li>
+    <li><a href="./media/outros/fsae-doe.pdf">Artigo de DoE aplicado à
+    FSAE</a></li>
+    <li><a href="https://cdnm.statease.com/pubs/doeinracing.pdf">Outro
+    exemplo</a></li>
     </ul>
-    <p>Dbox 492,52 MB de 2,75 GB usados</p>
-    <h2
-    id="alguns-estudos-de-mecânica-estrutural-que-ficaram-interessantes">Alguns
-    estudos de mecânica estrutural que ficaram interessantes</h2>
+    <h2 id="manufatura-torno">Manufatura – torno</h2>
+    <h3 id="macetes-de-torno">Macetes de torno</h3>
     <ul>
-    <li>FEA Flange ex coerente com medida paquimetro</li>
-    <li>Análise de falhas disciplina</li>
-    <li>Estudo + apresentação confiabilidade Beck</li>
+    <li>começar macho no torno;</li>
+    <li>girar carro para assento de rolamento</li>
+    <li>usar broca de contra-ponto para material mole. Usar bedâme
+    comendo da esq para a direita.</li>
+    <li>experimentar diferentes ferramentas para diferentes
+    materiais</li>
+    <li>Broca/lima/lixa para acabamento</li>
+    <li>Lixa aprox. 200 retira material da ordem de 0,01mm</li>
+    <li>Apertar mais de um parafuso da placa progressivamente.
+    Importante após uso do relógio comparador.</li>
+    <li>Usar lixa ou material mole pra prender peça na placa para não
+    machucar acabamento.</li>
+    <li>Usar peça final para realizar ajustes.</li>
+    <li>trabalhar com bedâme pouco mais baixo do centro para evitar
+    quebra.</li>
+    <li>Se furo muito pequeno, trabalhar com ferramenta de interno mais
+    alto que o centro.</li>
+    <li>Se peça esbelta e fina, usar mais material para sacrificar a
+    extremidade com furo para contraponto.</li>
+    <li>Fazer pequeno cone na extremidade de peças montadas com
+    interferência para inicio servir como guia.</li>
+    <li>Usar ferramenta bem afiada para obter bom acabamento.</li>
+    <li>Furo sai ligeiramente maior que a broca</li>
+    <li>Ferramentas da Sandvik: Nunca torar com a de acabamento!</li>
+    <li>Alinhamento com tarugo padrão.</li>
+    <li>Ajustes de colares muito duros ou muito moles.</li>
+    <li>Materiais muito duros tem uma profundidade mínima de corte.</li>
+    <li>Afundadinha com ferramenta no escalonado qdo há montagem na
+    superfície.</li>
+    <li>Exercício de ajustagem.</li>
     </ul>
-    <h2 id="outros-sem-categoria">Outros sem categoria</h2>
-    <ul>
-    <li>/media/rafael/c47f1d1b-2df6-4b2b-b7ce-07a116a218ad/Cursos/MinicursoDoE-FSAE</li>
-    </ul>
-    <h2 id="manufatura">Manufatura</h2>
     <h3 id="ementa-de-mini-curso-de-torno">Ementa de mini-curso de
     torno</h3>
-    <!--<details> <summary class="summary-closed">Ementa de mini-curso de torno</summary>-->
-    <!--<ul>-->
-    <!--  <li> Intro;</li>-->
     <ul>
     <li>Introdução</li>
     <li>Segurança
@@ -129,61 +249,15 @@
     tolerancias</li>
     <li>Macetes</li>
     <li>Administrar horários de uso do torno</li>
-    <li>Noções de gerenciamento de manufatura <!--</ul>-->
-    <!--</details>--></li>
+    <li>Noções de gerenciamento de manufatura</li>
     </ul>
-    <!--<details> <summary class="summary-closed">Mecetes de torno</summary>-->
-    <!--<ul>-->
-    <!--  <li> começar macho no torno;</li>-->
-    <h3 id="macetes-de-torno">Macetes de torno</h3>
-    <ul>
-    <li>começar macho no torno;</li>
-    <li>girar carro para assento de rolamento</li>
-    <li>usar broca de contra-ponto para material mole. Usar bedâme
-    comendo da esq para a direita.</li>
-    <li>experimentar diferentes ferramentas para diferentes
-    materiais</li>
-    <li>Broca/lima/lixa para acabamento</li>
-    <li>Lixa aprox. 200 retira material da ordem de 0,01mm</li>
-    <li>Apertar mais de um parafuso da placa progressivamente.
-    Importante após uso do relógio comparador.</li>
-    <li>Usar lixa ou material mole pra prender peça na placa para não
-    machucar acabamento.</li>
-    <li>Usar peça final para realizar ajustes.</li>
-    <li>trabalhar com bedâme pouco mais baixo do centro para evitar
-    quebra.</li>
-    <li>Se furo muito pequeno, trabalhar com ferramenta de interno mais
-    alto que o centro.</li>
-    <li>Se peça esbelta e fina, usar mais material para sacrificar a
-    extremidade com furo para contraponto.</li>
-    <li>Fazer pequeno cone na extremidade de peças montadas com
-    interferência para inicio servir como guia.</li>
-    <li>Usar ferramenta bem afiada para obter bom acabamento.</li>
-    <li>Furo sai ligeiramente maior que a broca</li>
-    <li>Ferramentas da Sandvik: Nunca torar com a de acabamento!</li>
-    <li>Alinhamento com tarugo padrão.</li>
-    <li>Ajustes de colares muito duros ou muito moles.</li>
-    <li>Materiais muito duros tem uma profundidade mínima de corte.</li>
-    <li>Afundadinha com ferramenta no escalonado qdo há montagem na
-    superfície.</li>
-    <li>Exercício de ajustagem. <!--</ul>--> <!--</details>--></li>
-    </ul>
-    <h2
-    id="reflexões-construidas-durante-a-participação-no-fsae">Reflexões
-    construidas durante a participação no FSAE</h2>
+    <h2 id="sobre-fsae-e-a-competição">Sobre FSAE e a Competição</h2>
     <figure>
     <img src="./media/outros/meme.jpg"
-    alt="Um meme vale mais que mil palavras" />
-    <figcaption aria-hidden="true">Um meme vale mais que mil
-    palavras</figcaption>
+    alt="Qual seria o nome da escola de samba do FSAE?" />
+    <figcaption aria-hidden="true">Qual seria o nome da escola de samba
+    do FSAE?</figcaption>
     </figure>
-    <h3 id="sobre-ética">Sobre ética</h3>
-    <p>Como um músculo, por isso deve exercitar nas pequenas ações. Do
-    exercício vc terá a mente forte.</p>
-    <h3 id="sobre-sucesso">Sobre sucesso</h3>
-    <p>Modelo 3 partes: vc, outros e acaso. Modelo 3 partes (ver msg
-    Loriz)</p>
-    <h2 id="sobre-fsae-e-a-competição">Sobre FSAE e a Competição</h2>
     <h3 id="para-que-fazer-um-carro">Para que fazer um carro?</h3>
     <ul>
     <li>Adquirir a capacidade de fazer um carro. Mais que isso, um
@@ -222,18 +296,15 @@
     podem evoluir a competição pois já participaram dela. Tanto FSAE
     como Baja. A intenção dos dois é a mesma, só muda o terreno
     (terra/asfalto).</p>
-    <h2
-    id="uma-opinião-sobre-a-experiência-de-participar-de-uma-equipe-extracurricular">Uma
-    opinião sobre a experiência de participar de uma equipe
-    extracurricular</h2>
-    <p>Esse vídeo expressa uma opinião minha sobre a experiência de
+    <h3
+    id="opinião-sobre-a-experiência-de-participar-de-uma-equipe-extracurricular">Opinião
+    sobre a experiência de participar de uma equipe extracurricular</h3>
+    <p>Esse texto expressa uma opinião minha sobre a experiência de
     participar de uma equipe extracurricular, em particular o Formula
     SAE, e por consequencia disso as opiniões aqui apresentadas não
     devem ser tomadas como verdadeiras. Elas são fundamentas na
     experiência que pude ter nos anos em que estive presente na equipe,
-    participando de suas atividades e convivendo com outros membros.
-    Peço desculpas pela imperfeições e mensagens mal passadas que o
-    pouco preparo do meu texto pode causar.</p>
+    participando de suas atividades e convivendo com outros membros.</p>
     <p>Os membros chegam nas universidades, por vezes iniciando a
     formação para sua vida profissional, e encontram os projetos
     extracurriculares. Dentre eles existe esse, que é o Formula SAE.
@@ -314,6 +385,25 @@
     que você pode ter. E também que retornem a sociedade, ao seu país, o
     que de bom que de alguma forma chegou até a você pela sociedade e
     Universidade enquanto você participou da equipe.</p>
+    <h2
+    id="reflexões-construidas-durante-a-participação-no-fsae">Reflexões
+    construidas durante a participação no FSAE</h2>
+    <h3 id="um-modelo-sobre-ética">Um modelo sobre ética</h3>
+    <p>Como um músculo, por isso deve exercitar nas pequenas ações.
+    Ninguém é 100% ético, mas a ética é como um musculo, que fica forte
+    a medida que é exercitada. O objetivo é ir exercitando-a até nas
+    pequenas atitudes para chegar tão próximo ao 100% quanto possível.
+    Do exercício vc terá a mente forte.</p>
+    <h3 id="um-modelo-sobre-o-sucesso">Um modelo sobre o sucesso</h3>
+    <p>ter sucesso em qqr coisa na vida depende de três partes, sempre:
+    de você, de terceiros (outras pessoas) e do acaso. Não sei da tua
+    história, talvez o acaso e terceiros não sejam generosos contigo,
+    mas vc fazer a sua parte e isso é o mais importante pq é a única
+    parte que vc controla, tb é onde está tua integridade como pessoa.
+    Se o sucesso não vem mesmo após sua parte cumprida, é inevitável que
+    sobrem algumas cicatrizes, mas esse modelo pelo menos ajuda a
+    entender onde a gente se encaixa em cada situação. As outras duas
+    partes, os ventos mudam vez ou outra.</p>
         <footer style="text-align: justify;">
         <p>Uso disponível sob licença livre <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR">Creative Commons BY-SA 4.0</a>, exceto para os conteúdos não originais desse site.
         Construído com <a href="https://pandoc.org/">pandoc</a> e <a href="https://github.com/kognise/water.css">water.css</a>.</p><!--RRM-->
